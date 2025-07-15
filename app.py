@@ -59,7 +59,7 @@ msds_data = {
             "penanganan": "Gunakan sarung tangan tahan asam, pelindung mata, dan masker.",
             "penyimpanan": "Simpan dalam botol kaca/plastik tebal, jauh dari basa.",
             "p3k": "Jika terkena kulit, bilas dengan air selama 15 menit dan cari bantuan medis.",
-            "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/320331"
+            "link": "https://www.merckmillipore.com/Web-VE-Site/en_US/-/VEF/ShowDocument-File?ProductSKU=MDA_CHEM-109973&DocumentType=MSD&DocumentId=109973_SDS_ID_ID.PDF&DocumentUID=406631&Language=ID&Country=ID&Origin=null"
         },
         "NaOH": {
             "nama": "Natrium Hidroksida (NaOH)",
@@ -77,6 +77,7 @@ msds_data = {
             "p3k": "Bilas selama 20 menit, cari pertolongan medis.",
             "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/339741"
         }
+        
     },
     "Gas Berbahaya": {
         "NH3": {
