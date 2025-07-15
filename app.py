@@ -734,8 +734,8 @@ elif st.session_state.halaman == 2:
     ---
     ### 📚 Sumber Informasi
     Data bahan kimia diambil dan disederhanakan dari sumber-sumber terpercaya seperti:
-    - MSDS resmi (Sigma-Aldrich, Fisher Scientific)
-    - Lembaga keselamatan kerja seperti OSHA, GHS, dan lainnya
+    - MSDS resmi 
+    - Lembaga keselamatan kerja 
     """)
     col1, col2 = st.columns(2)
     col1.button("⬅ Back", on_click=back)
