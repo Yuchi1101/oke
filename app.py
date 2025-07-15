@@ -3,7 +3,10 @@ st.markdown("""
     <style>
         /* ===== GAYA LATAR BELAKANG ===== */
         .stApp {
-            background: linear-gradient(to bottom right, #e0f7fa, #f1f8e9);
+            background-image: url("https://images.unsplash.com/photo-1581090700227-1e8e7f13e4f2"); /* ganti dengan gambar senyawa favoritmu */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             color: #333333;
             font-family: 'Segoe UI', sans-serif;
         }
@@ -49,6 +52,7 @@ st.markdown("""
 
     </style>
 """, unsafe_allow_html=True)
+
 # ---------------------
 # KONFIGURASI
 # ---------------------
