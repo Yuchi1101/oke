@@ -35,7 +35,7 @@ def back():
 # ---------------------
 with st.sidebar:
     st.markdown("## 🔀 Tampilan Menu ")
-    if st.button("🏠 Ke Beranda"):
+    if st.button("🏠 Beranda"):
         st.session_state.halaman = 1
         st.session_state.kuis_selesai = False
     if st.button("📘 Informasi Aplikasi"):
@@ -199,7 +199,7 @@ elif st.session_state.halaman == 4:
 
     if not st.session_state.kuis_selesai:
         st.session_state.nama = st.text_input("Nama:")
-        st.session_state.nim = st.text_input("NIM:")
+        st.session_state.instansi = st.text_input("Instansi:")
 
         st.markdown("### Soal Pilihan Ganda")
         for i, soal in enumerate(pg):
