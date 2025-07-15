@@ -1,9 +1,10 @@
 import streamlit as st
+# ===== CSS CUSTOM STYLE =====
 st.markdown("""
     <style>
-        /* ===== GAYA LATAR BELAKANG ===== */
+        /* ===== LATAR BELAKANG SENYAWA KIMIA ===== */
         .stApp {
-            background-image: url("https://images.unsplash.com/photo-1581090700227-1e8e7f13e4f2"); /* ganti dengan gambar senyawa favoritmu */
+            background-image: url("https://wallpaperflare.com/static/1014/1000/242/molecule-chemistry-science-3d-wallpaper.jpg");
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -48,8 +49,10 @@ st.markdown("""
         /* ===== CONTAINER / BOX ===== */
         .block-container {
             padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 15px;
+            margin-top: 50px;
         }
-
     </style>
 """, unsafe_allow_html=True)
 
