@@ -691,7 +691,7 @@ isian = [
 # ---------------------
 if st.session_state.halaman == 1:
     st.title("💻 Web Pengenalan Risiko dan Cara Menangani Senyawa Kimia Umum")
-     st.markdown("### 👥 Kelompok 10 - LPK")
+    st.markdown("### 👥 Kelompok 10 - LPK")
     st.markdown("""
     Anggota:
     1. Aurellia Syafa Ghania (2460339)
