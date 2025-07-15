@@ -14,76 +14,94 @@ def back():
     st.session_state.halaman -= 1
 
 # ---------------------
-# DATA MSDS TERSTRUKTUR
+# NAVIGASI CEPAT (SIDEBAR)
+# ---------------------
+with st.sidebar:
+    st.markdown("## 🔀 Navigasi Cepat")
+    if st.button("🏠 Ke Beranda"):
+        st.session_state.halaman = 1
+        st.session_state.kuis_selesai = False
+    if st.button("📘 Tentang"):
+        st.session_state.halaman = 2
+        st.session_state.kuis_selesai = False
+    if st.button("📄 Data MSDS"):
+        st.session_state.halaman = 3
+        st.session_state.kuis_selesai = False
+    if st.button("📝 Kuis"):
+        st.session_state.halaman = 4
+        st.session_state.kuis_selesai = False
+
+# ---------------------
+# DATA MSDS
 # ---------------------
 msds_data = {
     "Asam & Basa": {
         "HCl": {
             "nama": "Asam Klorida (HCl)",
-            "bahaya": "Korosif kuat, menyebabkan luka bakar pada kulit dan mata.",
-            "penanganan": "Gunakan sarung tangan tahan asam, pelindung mata, dan masker.",
-            "penyimpanan": "Simpan dalam botol kaca/plastik tebal, jauh dari basa.",
-            "p3k": "Jika terkena kulit, bilas dengan air selama 15 menit dan cari bantuan medis.",
+            "bahaya": "Korosif kuat, menyebabkan luka bakar.",
+            "penanganan": "Gunakan sarung tangan tahan asam, goggles.",
+            "penyimpanan": "Jauh dari basa dan panas.",
+            "p3k": "Bilas dengan air mengalir selama 15 menit.",
             "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/320331"
         },
         "NaOH": {
             "nama": "Natrium Hidroksida (NaOH)",
-            "bahaya": "Sangat korosif, menyebabkan luka bakar kimia.",
-            "penanganan": "Gunakan APD lengkap: sarung tangan, goggles, jas lab.",
-            "penyimpanan": "Di tempat kering dan tertutup rapat, jauh dari asam.",
-            "p3k": "Jika terkena kulit, bilas dengan air banyak dan segera ke IGD.",
+            "bahaya": "Sangat korosif, merusak jaringan.",
+            "penanganan": "Gunakan APD lengkap.",
+            "penyimpanan": "Tempat kering & tertutup, jauh dari asam.",
+            "p3k": "Bilas air banyak dan cari bantuan medis.",
             "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/221465"
         },
         "H2SO4": {
             "nama": "Asam Sulfat (H2SO4)",
-            "bahaya": "Sangat korosif, menghasilkan panas saat bereaksi dengan air.",
-            "penanganan": "Tuangkan asam ke air (jangan sebaliknya), gunakan pelindung lengkap.",
-            "penyimpanan": "Wadah tahan asam, jauh dari bahan organik dan air.",
-            "p3k": "Bilas selama 20 menit, cari pertolongan medis.",
+            "bahaya": "Sangat korosif, menghasilkan panas jika dicampur air.",
+            "penanganan": "Tuangkan asam ke air, jangan sebaliknya.",
+            "penyimpanan": "Wadah tahan asam, jauh dari bahan organik.",
+            "p3k": "Bilas lama & cari pertolongan medis.",
             "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/339741"
         }
     },
     "Gas Berbahaya": {
         "NH3": {
             "nama": "Amonia (NH₃)",
-            "bahaya": "Gas beracun, menyengat, mengiritasi saluran napas.",
-            "penanganan": "Gunakan pelindung pernapasan, pastikan ventilasi cukup.",
-            "penyimpanan": "Tabung logam tertutup, jauh dari panas dan asam.",
-            "p3k": "Segera bawa ke udara segar, cari bantuan medis.",
+            "bahaya": "Gas menyengat, menyebabkan iritasi.",
+            "penanganan": "Gunakan respirator.",
+            "penyimpanan": "Silinder tertutup, jauh dari panas.",
+            "p3k": "Segera ke udara segar.",
             "link": "https://www.sigmaaldrich.com/ID/en/sds/aldrich/338818"
         },
         "Cl2": {
             "nama": "Klorin (Cl₂)",
-            "bahaya": "Gas kuning-hijau, sangat toksik.",
-            "penanganan": "Gunakan respirator, goggles, pastikan ventilasi baik.",
-            "penyimpanan": "Silinder baja, jauh dari panas dan bahan reduktor.",
-            "p3k": "Evakuasi ke udara segar, beri oksigen bila perlu.",
+            "bahaya": "Toksik, mengiritasi saluran pernapasan.",
+            "penanganan": "Gunakan APD dan ventilasi baik.",
+            "penyimpanan": "Silinder logam, jauh dari panas.",
+            "p3k": "Evakuasi & beri oksigen jika perlu.",
             "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/401279"
         }
     },
     "Pelarut Organik": {
         "Etanol": {
             "nama": "Etanol (C₂H₅OH)",
-            "bahaya": "Mudah terbakar, uap menyebabkan pusing.",
-            "penanganan": "Gunakan di ruang berventilasi, jauhkan dari api.",
-            "penyimpanan": "Wadah tertutup rapat, suhu ruang.",
-            "p3k": "Jika kontak mata, bilas. Jika terhirup, ke udara segar.",
+            "bahaya": "Mudah terbakar, uap berbahaya.",
+            "penanganan": "Gunakan ruang berventilasi.",
+            "penyimpanan": "Tertutup, suhu ruang.",
+            "p3k": "Ke udara segar, bilas jika kontak kulit.",
             "link": "https://www.sigmaaldrich.com/ID/en/sds/aldrich/459836"
         },
         "Aseton": {
             "nama": "Aseton (CH₃COCH₃)",
-            "bahaya": "Sangat mudah menguap, menyebabkan iritasi.",
-            "penanganan": "Gunakan di lemari asam atau ruang ventilasi baik.",
-            "penyimpanan": "Jauhkan dari sumber api dan panas berlebih.",
-            "p3k": "Cuci kulit dengan sabun. Jika pusing, ke udara segar.",
+            "bahaya": "Mudah menguap dan terbakar.",
+            "penanganan": "Gunakan lemari asam.",
+            "penyimpanan": "Jauh dari api.",
+            "p3k": "Segera bilas dan ke udara segar.",
             "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/650501"
         },
         "Methanol": {
             "nama": "Metanol (CH₃OH)",
-            "bahaya": "Beracun, mudah terbakar, bisa sebabkan kebutaan.",
-            "penanganan": "Gunakan sarung tangan dan pelindung wajah.",
-            "penyimpanan": "Simpan di tempat sejuk, tertutup rapat.",
-            "p3k": "Jangan muntah, segera ke rumah sakit.",
+            "bahaya": "Beracun, menyebabkan kebutaan.",
+            "penanganan": "Gunakan pelindung wajah.",
+            "penyimpanan": "Tempat sejuk, tertutup.",
+            "p3k": "Jangan dimuntahkan, ke RS segera.",
             "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/34860"
         }
     }
@@ -97,12 +115,12 @@ if st.session_state.halaman == 1:
     st.markdown("### 👥 Kelompok 3 - Kimia Dasar Praktikum")
     st.image("https://images.unsplash.com/photo-1581093448796-8a04b3e1e997", use_column_width=True)
     st.markdown("""
-    Aplikasi ini bertujuan memberikan pemahaman tentang:
-    - Risiko senyawa kimia di laboratorium
-    - Cara penanganan & penyimpanan aman
-    - Akses MSDS asli dari produsen terpercaya
+    Aplikasi ini memberikan pemahaman tentang:
+    - Risiko bahan kimia
+    - Penanganan & penyimpanan yang benar
+    - Tautan langsung ke MSDS
 
-    👉 Tekan *Next* untuk melanjutkan.
+    👉 Klik *Next* untuk mulai!
     """)
     st.button("Next ▶", on_click=next)
 
@@ -112,15 +130,13 @@ if st.session_state.halaman == 1:
 elif st.session_state.halaman == 2:
     st.title("📘 Tentang Aplikasi")
     st.markdown("""
-    *Apa itu MSDS?*
+    *MSDS (Material Safety Data Sheet)* adalah dokumen resmi berisi:
+    - Bahaya bahan kimia
+    - Cara penanganan aman
+    - Prosedur P3K dan penyimpanan
+    - Tautan ke sumber resmi
 
-    Material Safety Data Sheet (MSDS) adalah dokumen resmi yang menjelaskan:
-    - Risiko bahan kimia
-    - Prosedur penanganan
-    - Tindakan P3K dan penyimpanan
-    - Link resmi dari produsen
-
-    👉 Tekan *Next* untuk mulai eksplorasi bahan kimia.
+    👉 Klik *Next* untuk eksplorasi bahan kimia.
     """)
     col1, col2 = st.columns(2)
     col1.button("⬅ Back", on_click=back)
@@ -141,10 +157,8 @@ elif st.session_state.halaman == 3:
     st.markdown(f"*Bahaya:* {data['bahaya']}")
     st.markdown(f"*Penanganan:* {data['penanganan']}")
     st.markdown(f"*Penyimpanan:* {data['penyimpanan']}")
-    st.markdown(f"*Pertolongan Pertama (P3K):* {data['p3k']}")
-
-    if "link" in data:
-        st.markdown(f"📎 [🔗 Lihat MSDS Resmi ({senyawa})]({data['link']})")
+    st.markdown(f"*P3K:* {data['p3k']}")
+    st.markdown(f"📎 [🔗 Lihat MSDS Resmi]({data['link']})")
 
     col1, col2 = st.columns(2)
     col1.button("⬅ Back", on_click=back)
@@ -154,7 +168,7 @@ elif st.session_state.halaman == 3:
 # HALAMAN 4: KUIS
 # ---------------------
 elif st.session_state.halaman == 4:
-    st.title("📝 Kuis: Risiko & Penanganan Senyawa Kimia")
+    st.title("📝 Kuis: Risiko & Penanganan Bahan Kimia")
 
     if 'kuis_selesai' not in st.session_state:
         st.session_state.kuis_selesai = False
@@ -162,54 +176,51 @@ elif st.session_state.halaman == 4:
 
     if not st.session_state.kuis_selesai:
         with st.form("form_kuis"):
-            st.markdown("### 📌 Data Diri")
             nama = st.text_input("Nama Lengkap")
-            kelas = st.text_input("Kelas / Prodi")
+            prodi = st.text_input("Kelas / Prodi")
 
-            st.markdown("### 1️⃣ Soal Pilihan Ganda")
+            st.markdown("### 📌 Soal Pilihan Ganda")
             pg = [
-                {"soal": "Apa fungsi utama MSDS?", "opsi": ["Petunjuk alat", "Informasi bahan kimia", "Laporan analisis", "Metode titrasi"], "jawaban": "Informasi bahan kimia"},
-                {"soal": "Etanol termasuk senyawa...", "opsi": ["Asam", "Gas", "Pelarut organik", "Basa"], "jawaban": "Pelarut organik"},
-                {"soal": "P3K saat terkena H2SO4 adalah...", "opsi": ["Bilas dengan etanol", "Segera minum air", "Bilas air mengalir lama", "Oleskan basa"], "jawaban": "Bilas air mengalir lama"},
-                {"soal": "Penyimpanan NaOH sebaiknya...", "opsi": ["Dekat asam", "Ruang terbuka", "Tertutup & kering", "Dicampur air"], "jawaban": "Tertutup & kering"},
-                {"soal": "Bahaya utama Klorin (Cl2)?", "opsi": ["Mudah terbakar", "Toksik", "Radioaktif", "Netral"], "jawaban": "Toksik"},
+                {"soal": "Fungsi MSDS adalah...", "opsi": ["Label botol", "Panduan eksperimen", "Informasi bahan kimia", "Lembar nilai"], "jawaban": "Informasi bahan kimia"},
+                {"soal": "Senyawa Etanol termasuk...", "opsi": ["Asam", "Basa", "Gas", "Pelarut organik"], "jawaban": "Pelarut organik"},
+                {"soal": "Bahaya utama Cl2 adalah...", "opsi": ["Inflamasi kulit", "Bau harum", "Toksik", "Flu"], "jawaban": "Toksik"},
+                {"soal": "Metanol jika tertelan dapat menyebabkan...", "opsi": ["Sakit perut", "Buta", "Pilek", "Demam"], "jawaban": "Buta"},
+                {"soal": "NaOH sebaiknya tidak disimpan dekat dengan...", "opsi": ["Asam", "Air", "Alkohol", "Besi"], "jawaban": "Asam"},
             ]
 
             skor_pg = 0
-            jawaban_pg = []
             for i, q in enumerate(pg):
                 jwb = st.radio(f"{i+1}. {q['soal']}", q["opsi"], key=f"pg{i}")
-                jawaban_pg.append((jwb, q["jawaban"]))
                 if jwb == q["jawaban"]:
                     skor_pg += 1
 
-            st.markdown("### 2️⃣ Soal Isian")
+            st.markdown("### ✍ Soal Isian")
             isian = [
-                {"soal": "Senyawa yang tidak boleh disimpan berdekatan dengan NaOH adalah...", "jawaban": ["asam", "HCl", "H2SO4"]},
-                {"soal": "Metanol jika tertelan dapat menyebabkan...", "jawaban": ["kebutaan", "keracunan", "kematian"]},
+                {"soal": "Apa bahaya utama dari HCl?", "jawaban": ["korosif", "iritasi", "membakar"]},
+                {"soal": "Mengapa H2SO4 tidak boleh dituangkan ke air?", "jawaban": ["eksoterm", "panas", "reaksi eksoterm"]},
             ]
-
             skor_isian = 0
             for i, q in enumerate(isian):
                 jawaban = st.text_input(f"{i+1}. {q['soal']}", key=f"isian{i}")
-                if jawaban.strip().lower() in [j.lower() for j in q["jawaban"]]:
+                if jawaban.strip().lower() in [x.lower() for x in q["jawaban"]]:
                     skor_isian += 1
 
-            submitted = st.form_submit_button("✅ Selesai & Lihat Skor")
+            submitted = st.form_submit_button("✅ Submit")
             if submitted:
                 st.session_state.kuis_selesai = True
                 st.session_state.skor = skor_pg + skor_isian
                 st.session_state.jml_soal = len(pg) + len(isian)
 
     else:
-        st.success(f"✅ Kuis Selesai!\n\n*Skor Anda: {st.session_state.skor} / {st.session_state.jml_soal}*")
-        st.markdown("### 🔍 Kunci Jawaban:")
+        st.success(f"🎉 Skor Akhir: {st.session_state.skor} / {st.session_state.jml_soal}")
+        st.markdown("### 📖 Kunci Jawaban")
         for i, q in enumerate(pg):
             st.markdown(f"{i+1}. {q['soal']}")
             st.markdown(f"✅ Jawaban Benar: {q['jawaban']}")
-
         for i, q in enumerate(isian):
             st.markdown(f"*Isian {i+1}: {q['soal']}*")
-            st.markdown(f"✅ Contoh jawaban: {q['jawaban'][0]}")
+            st.markdown(f"✅ Contoh Jawaban: {q['jawaban'][0]}")
 
-    st.button("⬅ Back", on_click=back)
+        if st.button("🏠 Kembali ke Halaman Awal"):
+            st.session_state.halaman = 1
+            st.session_state.kuis_selesai = False
