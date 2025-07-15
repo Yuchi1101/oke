@@ -22,15 +22,30 @@ if 'nim' not in st.session_state:
     st.session_state.nim = ""
 
 # ---------------------
-# NAVIGASI
+# FUNGSI NAVIGASI
 # ---------------------
-def next(): st.session_state.halaman += 1
-def back(): st.session_state.halaman -= 1
+def next():
+    st.session_state.halaman += 1
 
+def back():
+    st.session_state.halaman -= 1
+
+# ---------------------
+# NAVIGASI CEPAT (SIDEBAR)
+# ---------------------
 with st.sidebar:
-    st.markdown("## 🚀 Navigasi Cepat")
-    if st.button("🏠 Kembali ke Beranda"):
+    st.markdown("## 🔀 Navigasi Cepat")
+    if st.button("🏠 Ke Beranda"):
         st.session_state.halaman = 1
+        st.session_state.kuis_selesai = False
+    if st.button("📘 Tentang"):
+        st.session_state.halaman = 2
+        st.session_state.kuis_selesai = False
+    if st.button("📄 Data MSDS"):
+        st.session_state.halaman = 3
+        st.session_state.kuis_selesai = False
+    if st.button("📝 Kuis"):
+        st.session_state.halaman = 4
         st.session_state.kuis_selesai = False
 
 # ---------------------
@@ -122,25 +137,33 @@ isian = [
 # ---------------------
 if st.session_state.halaman == 1:
     st.title("💻 Web Pengenalan Risiko dan Cara Menangani Senyawa Kimia Umum")
-    st.markdown("### 👥 Kelompok 3 - Kimia Dasar Praktikum")
-    st.markdown("""*Anggota:*
+    st.markdown("### 👥 Kelompok 10 - LPK")
+    st.markdown("""
+    Anggota:
     1. Aurellia Syafa Ghania (2460339)
     2. Hafis Dwi Bahariyanto (2460381)
     3. Nabilah Afrina Fatin (2460448)
     4. Raden Siti Nurul Rachma (2460486)
-    5. Yuchi Berliana Resti (2460540) 
-   
+    5. Yuchi Berliana Resti (2460540)
     """)
-    st.image("https://images.unsplash.com/photo-1581093448796-8a04b3e1e997", use_column_width=True)
+
+    st.markdown("""
+    Aplikasi ini memberikan pemahaman tentang:
+    - Risiko bahan kimia
+    - Penanganan & penyimpanan yang benar
+    - Tautan langsung ke MSDS
+
+    👉 Klik Next untuk mulai!
+    """)
     st.button("Next ▶", on_click=next)
 
 # ---------------------
-# HALAMAN 2: PENJELASAN
+# HALAMAN 2: TENTANG
 # ---------------------
 elif st.session_state.halaman == 2:
     st.title("📘 Tentang MSDS")
     st.markdown("""
-    *Material Safety Data Sheet (MSDS)* adalah dokumen penting yang memuat:
+    Material Safety Data Sheet (MSDS) adalah dokumen penting yang memuat:
     - Identifikasi bahan dan bahayanya
     - Langkah-langkah pertolongan pertama
     - Prosedur penanganan dan penyimpanan yang aman
@@ -159,10 +182,10 @@ elif st.session_state.halaman == 3:
     data = msds_data[kategori][senyawa]
 
     st.subheader(data["nama"])
-    st.markdown(f"*Bahaya:* {data['bahaya']}")
-    st.markdown(f"*Penanganan:* {data['penanganan']}")
-    st.markdown(f"*Penyimpanan:* {data['penyimpanan']}")
-    st.markdown(f"*P3K:* {data['p3k']}")
+    st.markdown(f"Bahaya: {data['bahaya']}")
+    st.markdown(f"Penanganan: {data['penanganan']}")
+    st.markdown(f"Penyimpanan: {data['penyimpanan']}")
+    st.markdown(f"P3K: {data['p3k']}")
     st.markdown(f"📄 [Lihat MSDS Lengkap]({data['link']})")
 
     col1, col2 = st.columns(2)
@@ -191,8 +214,8 @@ elif st.session_state.halaman == 4:
             st.session_state.kuis_selesai = True
     else:
         benar = 0
-        st.markdown(f"*Nama:* {st.session_state.nama}")
-        st.markdown(f"*NIM:* {st.session_state.nim}")
+        st.markdown(f"Nama: {st.session_state.nama}")
+        st.markdown(f"NIM: {st.session_state.nim}")
         st.markdown("---")
 
         for i, soal in enumerate(pg):
