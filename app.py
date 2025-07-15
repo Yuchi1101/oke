@@ -161,20 +161,23 @@ elif st.session_state.halaman == 4:
                 st.session_state.jawaban_isian_user = jawaban_isian_user
 
     else:
-        st.success(f"🎉 Skor Akhir: {st.session_state.skor} / {st.session_state.jml_soal}")
-        st.markdown("### 📖 Kunci Jawaban")
+        st.success(f"🏁 Skor Akhir: {st.session_state.skor} / {st.session_state.jml_soal}")
+st.markdown("### 📘 Kunci Jawaban")
 
-        for i, q in enumerate(pg):
-            user_jwb = st.session_state.jawaban_pg_user[i]
-            benar = "✅" if user_jwb == q['jawaban'] else "❌"
-            st.markdown(f"{i+1}. {q['soal']}\n- Jawaban Anda: {user_jwb} {benar}\n- Jawaban Benar: {q['jawaban']}")
+pg = st.session_state.get("pg", [])
+isian = st.session_state.get("isian", [])
 
-        for i, q in enumerate(isian):
-            user_isian = st.session_state.jawaban_isian_user[i]
-            cocok = user_isian.strip().lower() in [x.lower() for x in q['jawaban']]
-            benar = "✅" if cocok else "❌"
-            st.markdown(f"*Isian {i+1}: {q['soal']}*\n- Jawaban Anda: {user_isian} {benar}\n- Contoh Jawaban: {q['jawaban'][0]}")
+for i, q in enumerate(pg):
+    user_jwb = st.session_state.jawaban_pg_user[i]
+    benar = "✅" if user_jwb == q['jawaban'] else "❌"
+    st.markdown(f"{i+1}. {q['soal']}\n\nJawaban Anda: {user_jwb} {benar}\nJawaban Benar: {q['jawaban']}\n")
 
+for i, q in enumerate(isian):
+    user_isian = st.session_state.jawaban_isian_user[i]
+    cocok = user_isian.strip().lower() in [x.lower() for x in q['jawaban']]
+    benar = "✅" if cocok else "❌"
+    st.markdown(f"*Isian {i+1}. {q['soal']}*\n\nJawaban Anda: {user_isian} {benar}\nContoh Jawaban: {q['jawaban'][0]}\n")
+    
         if st.button("🏠 Kembali ke Halaman Awal"):
             st.session_state.halaman = 1
             st.session_state.kuis_selesai = False
