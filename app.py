@@ -38,7 +38,7 @@ with st.sidebar:
     if st.button("🏠 Ke Beranda"):
         st.session_state.halaman = 1
         st.session_state.kuis_selesai = False
-    if st.button("📘 Tentang"):
+    if st.button("📘 Informasi Aplikasi"):
         st.session_state.halaman = 2
         st.session_state.kuis_selesai = False
     if st.button("📄 Daftar Senyawa"):
