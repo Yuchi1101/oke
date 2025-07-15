@@ -148,11 +148,6 @@ if st.session_state.halaman == 1:
     """)
 
     st.markdown("""
-    Aplikasi ini memberikan pemahaman tentang:
-    - Risiko bahan kimia
-    - Penanganan & penyimpanan yang benar
-    - Tautan langsung ke MSDS
-
     👉 Klik Next untuk mulai!
     """)
     st.button("Next ▶", on_click=next)
