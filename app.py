@@ -1,53 +1,52 @@
-
 import streamlit as st
 
----------------------
+#---------------------
 
-KONFIGURASI
+#KONFIGURASI
 
----------------------
+#---------------------
 
 st.set_page_config(page_title="Web Risiko & Penanganan Bahan Kimia", layout="centered")
 
----------------------
+#---------------------
 
-INISIALISASI SESSION
+#INISIALISASI SESSION
 
----------------------
+#---------------------
 
 if 'halaman' not in st.session_state: st.session_state.halaman = 1 if 'kuis_selesai' not in st.session_state: st.session_state.kuis_selesai = False if 'jawaban_pg' not in st.session_state: st.session_state.jawaban_pg = {} if 'jawaban_isian' not in st.session_state: st.session_state.jawaban_isian = {} if 'nama' not in st.session_state: st.session_state.nama = "" if 'nim' not in st.session_state: st.session_state.nim = ""
 
----------------------
+#---------------------
 
-FUNGSI NAVIGASI
+#FUNGSI NAVIGASI
 
----------------------
+#---------------------
 
 def next(): st.session_state.halaman += 1
 
 def back(): st.session_state.halaman -= 1
 
----------------------
+#---------------------
 
-NAVIGASI CEPAT (SIDEBAR)
+#NAVIGASI CEPAT (SIDEBAR)
 
----------------------
+#---------------------
 
 with st.sidebar: st.markdown("## 🔀 Navigasi Cepat") if st.button("🏠 Ke Beranda"): st.session_state.halaman = 1 st.session_state.kuis_selesai = False if st.button("📘 Tentang"): st.session_state.halaman = 2 st.session_state.kuis_selesai = False if st.button("📄 Informasi Kimia"): st.session_state.halaman = 3 st.session_state.kuis_selesai = False if st.button("📝 Kuis"): st.session_state.halaman = 4 st.session_state.kuis_selesai = False
 
----------------------
+#---------------------
 
-DATA SENYAWA KIMIA
+#DATA SENYAWA KIMIA
 
----------------------
+#---------------------
 
 msds_data = { "Asam": { "HCl": { "nama": "Asam Klorida (HCl)", "bahaya": "Korosif kuat, menyebabkan luka bakar pada kulit dan mata.", "penanganan": "Gunakan sarung tangan tahan asam, pelindung mata, dan masker.", "penyimpanan": "Simpan dalam botol kaca/plastik tebal, jauh dari basa.", "p3k": "Jika terkena kulit, bilas dengan air selama 15 menit dan cari bantuan medis.", "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/320331" } }, "Basa": { "NaOH": { "nama": "Natrium Hidroksida (NaOH)", "bahaya": "Sangat korosif, menyebabkan luka bakar kimia.", "penanganan": "Gunakan APD lengkap: sarung tangan, goggles, jas lab.", "penyimpanan": "Di tempat kering dan tertutup rapat, jauh dari asam.", "p3k": "Jika terkena kulit, bilas dengan air banyak dan segera ke IGD.", "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/221465" } } }
 
----------------------
+#---------------------
 
-HALAMAN 1: BERANDA
+#HALAMAN 1: BERANDA
 
----------------------
+#---------------------
 
 if st.session_state.halaman == 1: st.title("💻 Web Pengenalan Risiko dan Penanganan Senyawa Kimia Umum") st.markdown("### 👥 Kelompok 10 - LPK") st.markdown(""" Anggota: 1. Aurellia Syafa Ghania (2460339) 2. Hafis Dwi Bahariyanto (2460381) 3. Nabilah Afrina Fatin (2460448) 4. Raden Siti Nurul Rachma (2460486) 5. Yuchi Berliana Resti (2460540) """)
 
@@ -61,11 +60,11 @@ Aplikasi ini memberikan pemahaman tentang:
 """)
 st.button("Next ▶", on_click=next)
 
----------------------
+#---------------------
 
-HALAMAN 2: PENJELASAN
+#HALAMAN 2: PENJELASAN
 
----------------------
+#---------------------
 
 elif st.session_state.halaman == 2: st.title("📘 Tentang Aplikasi") st.markdown(""" Aplikasi ini dirancang untuk memberikan edukasi mengenai senyawa kimia yang umum digunakan dalam laboratorium maupun industri.
 
@@ -80,11 +79,11 @@ col1, col2 = st.columns(2)
 col1.button("⬅ Back", on_click=back)
 col2.button("Next ▶", on_click=next)
 
----------------------
+#---------------------
 
-HALAMAN 3: INFORMASI KIMIA
+#HALAMAN 3: INFORMASI KIMIA
 
----------------------
+#---------------------
 
 elif st.session_state.halaman == 3: st.title("📄 Informasi Risiko dan Penanganan Senyawa Kimia") kategori = st.selectbox("Pilih kategori:", list(msds_data.keys())) senyawa = st.selectbox("Pilih senyawa:", list(msds_data[kategori].keys())) data = msds_data[kategori][senyawa]
 
@@ -99,11 +98,11 @@ col1, col2 = st.columns(2)
 col1.button("⬅ Back", on_click=back)
 col2.button("Next ▶", on_click=next)
 
----------------------
+#---------------------
 
-HALAMAN 4: KUIS
+#HALAMAN 4: KUIS
 
----------------------
+#---------------------
 
 elif st.session_state.halaman == 4: st.title("📝 Kuis Pengayaan")
 
