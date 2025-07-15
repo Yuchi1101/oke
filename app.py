@@ -31,17 +31,17 @@ def back():
     st.session_state.halaman -= 1
 
 # ---------------------
-# NAVIGASI CEPAT (SIDEBAR)
+# TAMPILAN MENU (SIDEBAR)
 # ---------------------
 with st.sidebar:
-    st.markdown("## 🔀 Navigasi Cepat")
+    st.markdown("## 🔀 Tampilan Menu ")
     if st.button("🏠 Ke Beranda"):
         st.session_state.halaman = 1
         st.session_state.kuis_selesai = False
     if st.button("📘 Tentang"):
         st.session_state.halaman = 2
         st.session_state.kuis_selesai = False
-    if st.button("📄 Data MSDS"):
+    if st.button("📄 Daftar Senyawa"):
         st.session_state.halaman = 3
         st.session_state.kuis_selesai = False
     if st.button("📝 Kuis"):
@@ -49,7 +49,7 @@ with st.sidebar:
         st.session_state.kuis_selesai = False
 
 # ---------------------
-# DATA MSDS
+# DAFTAR SENYAWA
 # ---------------------
 msds_data = {
     "Asam & Basa": {
