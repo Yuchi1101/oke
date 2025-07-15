@@ -691,6 +691,13 @@ isian = [
 # ---------------------
 if st.session_state.halaman == 1:
     st.title("💻 Web Pengenalan Risiko dan Cara Menangani Senyawa Kimia Umum")
+    st.markdown("""
+🚨 Kimia bukan cuma soal rumus, tapi juga soal *keselamatan!*  
+Kenalan yuk sama *senyawa-senyawa kimia penting*,  
+pelajari potensi bahayanya, dan cari tahu cara aman ngadepinnya 💥🛡
+
+Klik menu di samping buat mulai, dan uji wawasanmu di akhir lewat kuis seru!
+""")
     st.markdown("### 👥 Kelompok 10 - LPK")
     st.markdown("""
     Anggota:
