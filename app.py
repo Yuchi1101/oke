@@ -60,10 +60,9 @@ st.markdown(
         background-repeat: no-repeat;
     }}
     </style>
-    """,
+    ,
     unsafe_allow_html=True
-)
-    st.markdown("""
+    
         Aplikasi ini menyediakan informasi MSDS untuk beberapa bahan kimia umum.
         Tekan *Next* untuk memulai.
     """)
