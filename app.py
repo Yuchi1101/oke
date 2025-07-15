@@ -694,9 +694,7 @@ if st.session_state.halaman == 1:
     st.markdown("""
 🚨 Kimia bukan cuma soal rumus, tapi juga soal *keselamatan!*  
 Kenalan yuk sama *senyawa-senyawa kimia penting*,  
-pelajari potensi bahayanya, dan cari tahu cara aman ngadepinnya 💥🛡
-
-Klik menu di samping buat mulai, dan uji wawasanmu di akhir lewat kuis seru!
+pelajari potensi bahayanya, dan cari tahu cara aman menghadapinya 💥
 """)
     st.markdown("### 👥 Kelompok 10 - LPK")
     st.markdown("""
@@ -709,7 +707,7 @@ Klik menu di samping buat mulai, dan uji wawasanmu di akhir lewat kuis seru!
     """)
 
     st.markdown("""
-    👉 Klik Next untuk mulai!
+    👉 Klik Next untuk mulai dan uji wawasanmu di akhir lewat kuis seru!
     """)
     st.button("Next ▶", on_click=next)
 
