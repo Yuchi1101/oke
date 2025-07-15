@@ -1,5 +1,54 @@
 import streamlit as st
+st.markdown("""
+    <style>
+        /* ===== GAYA LATAR BELAKANG ===== */
+        .stApp {
+            background: linear-gradient(to bottom right, #e0f7fa, #f1f8e9);
+            color: #333333;
+            font-family: 'Segoe UI', sans-serif;
+        }
 
+        /* ===== GAYA HEADER ===== */
+        h1, h2, h3 {
+            color: #1565c0;
+        }
+
+        /* ===== GAYA SIDEBAR ===== */
+        section[data-testid="stSidebar"] {
+            background-color: #bbdefb;
+            padding: 10px;
+        }
+
+        /* ===== GAYA TOMBOL ===== */
+        button[kind="primary"] {
+            background-color: #42a5f5;
+            color: white;
+            border: none;
+        }
+
+        button[kind="primary"]:hover {
+            background-color: #1e88e5;
+            color: white;
+        }
+
+        /* ===== TABS ===== */
+        .stTabs [role="tab"] {
+            font-weight: bold;
+            font-size: 16px;
+            color: #0d47a1;
+        }
+
+        .stTabs [role="tab"][aria-selected="true"] {
+            border-bottom: 3px solid #0d47a1;
+        }
+
+        /* ===== CONTAINER / BOX ===== */
+        .block-container {
+            padding: 2rem;
+        }
+
+    </style>
+""", unsafe_allow_html=True)
 # ---------------------
 # KONFIGURASI
 # ---------------------
