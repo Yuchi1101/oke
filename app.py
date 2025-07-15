@@ -22,15 +22,21 @@ if 'nim' not in st.session_state:
     st.session_state.nim = ""
 
 # ---------------------
-# NAVIGASI
+# NAVIGASI CEPAT (SIDEBAR)
 # ---------------------
-def next(): st.session_state.halaman += 1
-def back(): st.session_state.halaman -= 1
-
 with st.sidebar:
-    st.markdown("## 🚀 Navigasi Cepat")
-    if st.button("🏠 Kembali ke Beranda"):
+    st.markdown("## 🔀 Navigasi Cepat")
+    if st.button("🏠 Ke Beranda"):
         st.session_state.halaman = 1
+        st.session_state.kuis_selesai = False
+    if st.button("📘 Tentang"):
+        st.session_state.halaman = 2
+        st.session_state.kuis_selesai = False
+    if st.button("📄 Data MSDS"):
+        st.session_state.halaman = 3
+        st.session_state.kuis_selesai = False
+    if st.button("📝 Kuis"):
+        st.session_state.halaman = 4
         st.session_state.kuis_selesai = False
 
 # ---------------------
@@ -130,6 +136,15 @@ if st.session_state.halaman == 1:
     3. Nabilah Afrina Fatin (2460448)
     4. Raden Siti Nurul Rachma (2460486)
     5. Yuchi Berliana Resti (2460540)
+    """)
+
+    st.markdown("""
+    Aplikasi ini memberikan pemahaman tentang:
+    - Risiko bahan kimia
+    - Penanganan & penyimpanan yang benar
+    - Tautan langsung ke MSDS
+
+    👉 Klik *Next* untuk mulai!
     """)
     st.button("Next ▶", on_click=next)
 
