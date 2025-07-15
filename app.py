@@ -4,7 +4,7 @@ st.markdown("""
     <style>
         /* ===== BACKGROUND GAMBAR ===== */
         .stApp {
-            background-image: url('https://i.pinimg.com/originals/b9/26/92/b92692f0a8c4109d305c2c2ff85c2573.jpg');
+            background-image: url('https://pin.it/5lQrk5VD8');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -20,7 +20,7 @@ st.markdown("""
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(255, 255, 255, 0.75); /* putih transparan */
+            background: rgba(255, 255, 255, 0.75); /* biru muda */
             z-index: -1;
         }
     </style>
