@@ -341,8 +341,7 @@ msds_data = {
             "penyimpanan": "Wadah tertutup, jauh dari kelembaban.",
             "p3k": "Bawa ke udara segar, dapatkan bantuan medis.",
             "link": "#"
-    }
-}
+        }
     },
     "Gas Berbahaya": {
         "NH3": {
