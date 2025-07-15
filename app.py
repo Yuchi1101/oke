@@ -2,9 +2,9 @@ import streamlit as st
 # ===== CSS CUSTOM STYLE =====
 st.markdown("""
     <style>
-        /* ===== LATAR BELAKANG SENYAWA KIMIA ===== */
+        /* ===== BACKGROUND GAMBAR ===== */
         .stApp {
-            background-image: url("https://pin.it/5lQrk5VD8");
+            background-image: url('https://i.pinimg.com/originals/b9/26/92/b92692f0a8c4109d305c2c2ff85c2573.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -12,46 +12,16 @@ st.markdown("""
             font-family: 'Segoe UI', sans-serif;
         }
 
-        /* ===== GAYA HEADER ===== */
-        h1, h2, h3 {
-            color: #1565c0;
-        }
-
-        /* ===== GAYA SIDEBAR ===== */
-        section[data-testid="stSidebar"] {
-            background-color: #bbdefb;
-            padding: 10px;
-        }
-
-        /* ===== GAYA TOMBOL ===== */
-        button[kind="primary"] {
-            background-color: #42a5f5;
-            color: white;
-            border: none;
-        }
-
-        button[kind="primary"]:hover {
-            background-color: #1e88e5;
-            color: white;
-        }
-
-        /* ===== TABS ===== */
-        .stTabs [role="tab"] {
-            font-weight: bold;
-            font-size: 16px;
-            color: #0d47a1;
-        }
-
-        .stTabs [role="tab"][aria-selected="true"] {
-            border-bottom: 3px solid #0d47a1;
-        }
-
-        /* ===== CONTAINER / BOX ===== */
-        .block-container {
-            padding: 2rem;
-            background-color: rgba(255, 255, 255, 0.85);
-            border-radius: 15px;
-            margin-top: 50px;
+        /* ===== LAPISAN TRANSPARAN AGAR TEKS TERBACA ===== */
+        .stApp::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.75); /* putih transparan */
+            z-index: -1;
         }
     </style>
 """, unsafe_allow_html=True)
