@@ -63,7 +63,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
     st.markdown("""
         Aplikasi ini menyediakan informasi MSDS untuk beberapa bahan kimia umum.
         Tekan *Next* untuk memulai.
