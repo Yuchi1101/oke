@@ -76,6 +76,117 @@ msds_data = {
             "penyimpanan": "Wadah tahan asam, jauh dari bahan organik dan air.",
             "p3k": "Bilas selama 20 menit, cari pertolongan medis.",
             "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/339741"
+        },
+        "CH3COOH": {
+            "nama": "Asam Asetat (CH₃COOH)",
+            "bahaya": "Iritasi dan bau menyengat",
+            "penanganan": "Gunakan pelindung",
+            "penyimpanan": "Tertutup rapat",
+            "p3k": "Segera bilas",
+            "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/320099"
+        },
+        "HBr": {
+            "nama": "Asam Bromida (HBr)",
+            "bahaya": "Korosif dan beracun",
+            "penanganan": "Gunakan goggles",
+            "penyimpanan": "Botol kaca",
+            "p3k": "Bilas air",
+            "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/207409"
+        },
+        "HI": {
+            "nama": "Asam Iodida (HI)", 
+            "bahaya": "Iritasi saluran napas", 
+            "penanganan": "Gunakan masker", 
+            "penyimpanan": "Tertutup dan sejuk", 
+            "p3k": "Segera bilas", 
+            "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/207430"
+        },
+        "HF": {
+            "nama": "Asam Fluorida (HF)",
+            "bahaya": "Sangat toksik, menyerang tulang",
+            "penanganan": "Sarung tangan khusus",
+            "penyimpanan": "Botol plastik khusus",
+            "p3k": "Ke IGD segera",
+            "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/205228"
+        },
+        "H3PO4": {
+            "nama": "Asam Fosfat (H₃PO₄)",
+            "bahaya": "Iritasi kulit",
+            "penanganan": "Gunakan APD",
+            "penyimpanan": "Tempat tertutup",
+            "p3k": "Bilas air",
+            "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/345245"
+        },
+        "H2CO3": {
+            "nama": "Asam Karbonat (H₂CO₃)",
+            "bahaya": "Lemah namun iritasi",
+            "penanganan": "Pelindung standar",
+            "penyimpanan": "Botol tertutup",
+            "p3k": "Cuci air",
+            "link": "#"
+        },
+        "H2C2O4": {
+            "nama": "Asam Oksalat (H₂C₂O₄)",
+            "bahaya": "Beracun",
+            "penanganan": "Gunakan pelindung",
+            "penyimpanan": "Tertutup rapat",
+            "p3k": "Segera bilas",
+            "link": "#"
+        },
+        "HClO4": {
+            "nama": "Asam Perklorat (HClO₄)",
+            "bahaya": "Sangat reaktif",
+            "penanganan": "APD lengkap",
+            "penyimpanan": "Botol tahan asam",
+            "p3k": "Ke IGD",
+            "link": "#"},
+        "H2SeO4": {
+            "nama": "Asam Selenat (H₂SeO₄)",
+            "bahaya": "Toksik",
+            "penanganan": "Masker dan goggles",
+            "penyimpanan": "Jauh dari organik",
+            "p3k": "Udara segar",
+            "link": "#"
+        },
+        "HBO2": {
+            "nama": "Asam Borat (HBO₂)",
+            "bahaya": "Iritasi ringan",
+            "penanganan": "Minimal",
+            "penyimpanan": "Tutup rapat",
+            "p3k": "Bilas air",
+            "link": "#"
+        },
+        "C6H5COOH": {
+            "nama": "Asam Benzoat",
+            "bahaya": "Iritasi mata",
+            "penanganan": "Pelindung standar",
+            "penyimpanan": "Tertutup",
+            "p3k": "Cuci air",
+            "link": "#"
+        },
+        "HSO3Cl": {
+            "nama": "Asam Sulfonat",
+            "bahaya": "Korosif dan berasap",
+            "penanganan": "Ventilasi baik",
+            "penyimpanan": "Botol tahan asam",
+            "p3k": "Segera bilas",
+            "link": "#"
+        },
+        "H2S": {
+            "nama": "Asam Sulfida (gas)",
+            "bahaya": "Beracun, bau busuk",
+            "penanganan": "Masker respirator",
+            "penyimpanan": "Silinder",
+            "p3k": "Ke udara segar", 
+            "link": "#"
+        },
+        "CCl3COOH": {
+            "nama": "Asam Trikloroasetat",
+            "bahaya": "Toksik dan iritasi",
+            "penanganan": "APD lengkap",
+            "penyimpanan": "Jauh dari panas",
+            "p3k": "Segera bilas",
+            "link": "#"
         }
     },
     "Gas Berbahaya": {
