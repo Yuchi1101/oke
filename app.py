@@ -716,19 +716,30 @@ pelajari potensi bahayanya, dan cari tahu cara aman menghadapinya 💥
 elif st.session_state.halaman == 2:
     st.title("📘 Tentang Aplikasi")
     st.markdown("""
-   Aplikasi ini dirancang untuk memberikan edukasi mengenai senyawa kimia yang umum digunakan dalam laboratorium maupun industri.
+    Aplikasi ini dibuat untuk membantu pengguna memahami *risiko dan penanganan bahan kimia umum* yang sering digunakan di laboratorium atau lingkungan kerja.
 
-    Pengguna akan mendapatkan informasi mengenai:
-    - Bahaya dari masing-masing senyawa
-    - Cara penanganan dan penyimpanan yang tepat
-    - Prosedur pertolongan pertama (P3K)
+    Dengan aplikasi ini, pengguna dapat:
+    - Mengenal jenis-jenis bahan kimia yang sering dijumpai
+    - Memahami potensi bahaya dari masing-masing senyawa
+    - Mengetahui langkah penanganan aman jika terjadi tumpahan, paparan, atau kebocoran
+    - Mengetahui cara penyimpanan yang benar
+    - Memahami langkah pertolongan pertama (P3K) saat terjadi kecelakaan kimia
 
-    Dilengkapi juga dengan kuis interaktif untuk menguji pemahaman Anda.
+    Aplikasi ini juga dilengkapi dengan *kuis interaktif* untuk menguji pemahaman Anda.
+
+    ---
+    ### ⚠ Catatan Penting
+    Informasi dalam aplikasi ini bersifat *edukatif* dan ditujukan untuk memberikan pemahaman dasar. Dalam praktik nyata, tetap ikuti *SOP keselamatan kerja* dan konsultasikan dengan petugas *K3 (Keselamatan dan Kesehatan Kerja)* jika diperlukan.
+
+    ---
+    ### 📚 Sumber Informasi
+    Data bahan kimia diambil dan disederhanakan dari sumber-sumber terpercaya seperti:
+    - MSDS resmi (Sigma-Aldrich, Fisher Scientific)
+    - Lembaga keselamatan kerja seperti OSHA, GHS, dan lainnya
     """)
     col1, col2 = st.columns(2)
     col1.button("⬅ Back", on_click=back)
     col2.button("Next ▶", on_click=next)
-
 # ---------------------
 # HALAMAN 3: SENYAWA KIMIA
 # ---------------------
