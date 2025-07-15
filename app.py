@@ -178,6 +178,6 @@ for i, q in enumerate(isian):
     benar = "✅" if cocok else "❌"
     st.markdown(f"*Isian {i+1}. {q['soal']}*\n\nJawaban Anda: {user_isian} {benar}\nContoh Jawaban: {q['jawaban'][0]}\n")
     
-        if st.button("🏠 Kembali ke Halaman Awal"):
-            st.session_state.halaman = 1
-            st.session_state.kuis_selesai = False
+if st.button("🏠 Kembali ke Halaman Awal"):
+   st.session_state.halaman = 1
+   st.session_state.kuis_selesai = False
