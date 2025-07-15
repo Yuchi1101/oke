@@ -3,7 +3,7 @@ import streamlit as st
 # ---------------------
 # KONFIGURASI
 # ---------------------
-st.set_page_config(page_title="Web Risiko & Penanganan Bahan Kimia", layout="centered")
+st.set_page_config(page_title="Penalan Risiko dan Penanganan Bahan Kimia", layout="centered")
 
 # ---------------------
 # INISIALISASI SESSION
@@ -41,7 +41,7 @@ with st.sidebar:
     if st.button("📘 Tentang"):
         st.session_state.halaman = 2
         st.session_state.kuis_selesai = False
-    if st.button("📄 Data MSDS"):
+    if st.button("📄Daftar Senyawa"):
         st.session_state.halaman = 3
         st.session_state.kuis_selesai = False
     if st.button("📝 Kuis"):
@@ -49,7 +49,7 @@ with st.sidebar:
         st.session_state.kuis_selesai = False
 
 # ---------------------
-# DATA MSDS
+# DAFTAR SENYAWA
 # ---------------------
 msds_data = {
     "Asam & Basa": {
