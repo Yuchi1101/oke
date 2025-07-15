@@ -61,7 +61,7 @@ msds_data = {
             "p3k": "Jika terkena kulit, bilas dengan air selama 15 menit dan cari bantuan medis.",
             "link": "https://www.merckmillipore.com/Web-VE-Site/en_US/-/VEF/ShowDocument-File?ProductSKU=MDA_CHEM-109973&DocumentType=MSD&DocumentId=109973_SDS_ID_ID.PDF&DocumentUID=406631&Language=ID&Country=ID&Origin=null"
         },
-        "NaOH": {
+        "H2SO4": {
             "nama": "Natrium Hidroksida (NaOH)",
             "bahaya": "Sangat korosif, menyebabkan luka bakar kimia.",
             "penanganan": "Gunakan APD lengkap: sarung tangan, goggles, jas lab.",
