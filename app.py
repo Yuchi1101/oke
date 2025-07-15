@@ -503,8 +503,7 @@ msds_data = {
             "penyimpanan": "Silinder gas tertutup rapat.",
             "p3k": "Ventilasi ruangan dan evakuasi.",
             "link": "#"
-    }
-}
+        }
     },
         "Pelarut Organik": {
         "Etanol": {
