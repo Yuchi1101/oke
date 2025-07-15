@@ -148,35 +148,34 @@ if st.session_state.halaman == 1:
     """)
 
     st.markdown("""
-    Aplikasi ini memberikan pemahaman tentang:
-    - Risiko bahan kimia
-    - Penanganan & penyimpanan yang benar
-    - Tautan langsung ke MSDS
-
     👉 Klik Next untuk mulai!
     """)
     st.button("Next ▶", on_click=next)
 
 # ---------------------
-# HALAMAN 2: TENTANG
+# HALAMAN 2: PENJELASAN
 # ---------------------
 elif st.session_state.halaman == 2:
-    st.title("📘 Tentang MSDS")
+    st.title("📘 Tentang Aplikasi")
     st.markdown("""
-    Material Safety Data Sheet (MSDS) adalah dokumen penting yang memuat:
-    - Identifikasi bahan dan bahayanya
-    - Langkah-langkah pertolongan pertama
-    - Prosedur penanganan dan penyimpanan yang aman
+   Aplikasi ini dirancang untuk memberikan edukasi mengenai senyawa kimia yang umum digunakan dalam laboratorium maupun industri.
+
+    Pengguna akan mendapatkan informasi mengenai:
+    - Bahaya dari masing-masing senyawa
+    - Cara penanganan dan penyimpanan yang tepat
+    - Prosedur pertolongan pertama (P3K)
+
+    Dilengkapi juga dengan kuis interaktif untuk menguji pemahaman Anda.
     """)
     col1, col2 = st.columns(2)
     col1.button("⬅ Back", on_click=back)
     col2.button("Next ▶", on_click=next)
 
 # ---------------------
-# HALAMAN 3: DATA MSDS
+# HALAMAN 3: SENYAWA KIMIA
 # ---------------------
 elif st.session_state.halaman == 3:
-    st.title("📄 Informasi MSDS")
+    st.title("📄 Daftar Senyawa")
     kategori = st.selectbox("Pilih kategori:", list(msds_data.keys()))
     senyawa = st.selectbox("Pilih senyawa:", list(msds_data[kategori].keys()))
     data = msds_data[kategori][senyawa]
