@@ -14,7 +14,7 @@ st.set_page_config(page_title="Web Risiko & Penanganan Bahan Kimia", layout="cen
 
 #---------------------
 
-if 'halaman' not in st.session_state: st.session_state.halaman = 1 if 'kuis_selesai' not in st.session_state: st.session_state.kuis_selesai = False if 'jawaban_pg' not in st.session_state: st.session_state.jawaban_pg = {} if 'jawaban_isian' not in st.session_state: st.session_state.jawaban_isian = {} if 'nama' not in st.session_state: st.session_state.nama = "" if 'nim' not in st.session_state: st.session_state.nim = ""
+#if 'halaman' not in st.session_state: st.session_state.halaman = 1 if 'kuis_selesai' not in st.session_state: st.session_state.kuis_selesai = False if 'jawaban_pg' not in st.session_state: st.session_state.jawaban_pg = {} if 'jawaban_isian' not in st.session_state: st.session_state.jawaban_isian = {} if 'nama' not in st.session_state: st.session_state.nama = "" if 'nim' not in st.session_state: st.session_state.nim = ""
 
 #---------------------
 
