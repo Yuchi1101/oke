@@ -205,11 +205,11 @@ elif st.session_state.halaman == 4:
         st.success(f"✅ Kuis Selesai!\n\n*Skor Anda: {st.session_state.skor} / {st.session_state.jml_soal}*")
         st.markdown("### 🔍 Kunci Jawaban:")
         for i, q in enumerate(pg):
-            st.markdown(f"{i+1}. {q['soal']}**  
-            ✅ Jawaban Benar: {q['jawaban']}")
+            st.markdown(f"{i+1}. {q['soal']}")
+            st.markdown(f"✅ Jawaban Benar: {q['jawaban']}")
 
         for i, q in enumerate(isian):
-            st.markdown(f"*Isian {i+1}: {q['soal']}*  
-            ✅ Contoh jawaban: {q['jawaban'][0]}")
+            st.markdown(f"*Isian {i+1}: {q['soal']}*")
+            st.markdown(f"✅ Contoh jawaban: {q['jawaban'][0]}")
 
     st.button("⬅ Back", on_click=back)
