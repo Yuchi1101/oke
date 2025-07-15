@@ -4,7 +4,7 @@ st.markdown("""
     <style>
         /* ===== LATAR BELAKANG SENYAWA KIMIA ===== */
         .stApp {
-            background-image: url("https://wallpaperaccess.com/full/3518423.jpg");
+            background-image: url("https://pin.it/5lQrk5VD8");
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
