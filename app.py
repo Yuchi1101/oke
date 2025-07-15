@@ -99,7 +99,7 @@ msds_data = {
         },
         
         "HI": {
-        "nama": "Asam Iodida (HI)", 
+            "nama": "Asam Iodida (HI)", 
         "bahaya": "Iritasi saluran napas",
         "penanganan": "Gunakan masker", 
         "penyimpanan": "Tertutup dan sejuk", 
