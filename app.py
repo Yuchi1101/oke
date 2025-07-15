@@ -122,16 +122,15 @@ isian = [
 # ---------------------
 if st.session_state.halaman == 1:
     st.title("💻 Web Pengenalan Risiko dan Cara Menangani Senyawa Kimia Umum")
-    st.markdown("### 👥 Kelompok 3 - Kimia Dasar Praktikum")
+    st.markdown("### 👥 Kelompok 10 - LPK")
     st.markdown("""
     *Anggota:*
-    1. Ani Rahmawati
-    2. Budi Prasetyo
-    3. Citra Lestari
-    4. Dedi Kurniawan
-    5. Eka Wulandari
+    1. Aurellia Syafa Ghania (2460339)
+    2. Hafis Dwi Bahariyanto (2460381)
+    3. Nabilah Afrina Fatin (2460448)
+    4. Raden Siti Nurul Rachma (2460486)
+    5. Yuchi Berliana Resti (2460540)
     """)
-    st.image("https://images.unsplash.com/photo-1581093448796-8a04b3e1e997", use_column_width=True)
     st.button("Next ▶", on_click=next)
 
 # ---------------------
