@@ -359,9 +359,154 @@ msds_data = {
             "penyimpanan": "Silinder baja, jauh dari panas dan bahan reduktor.",
             "p3k": "Evakuasi ke udara segar, beri oksigen bila perlu.",
             "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/401279"
-        }
+        },
+        "H2S": {
+            "nama": "Hidrogen Sulfida (H₂S)",
+            "bahaya": "Beracun, bau seperti telur busuk, dapat mematikan dalam konsentrasi tinggi.",
+            "penanganan": "Gunakan ventilasi kuat dan detektor gas.",
+            "penyimpanan": "Disimpan dalam silinder tekan khusus.",
+            "p3k": "Segera pindahkan ke udara segar dan berikan oksigen.",
+            "link": "#"
     },
-    "Pelarut Organik": {
+        "CO": {
+            "nama": "Karbon Monoksida (CO)",
+            "bahaya": "Gas tak berwarna dan tak berbau, sangat beracun.",
+            "penanganan": "Gunakan detektor CO dan sistem ventilasi baik.",
+            "penyimpanan": "Simpan dalam silinder gas bertekanan.",
+            "p3k": "Berikan oksigen 100% dan bawa ke layanan medis darurat.",
+            "link": "#"
+    },
+        "NO2": {
+            "nama": "Nitrogen Dioksida (NO₂)",
+            "bahaya": "Iritasi paru-paru dan dapat menyebabkan edema paru.",
+            "penanganan": "Gunakan respirator dan pastikan ventilasi ruangan memadai.",
+            "penyimpanan": "Simpan dalam botol tahan gas bertekanan.",
+            "p3k": "Bawa korban ke udara segar dan dapatkan bantuan medis segera.",
+            "link": "#"
+    },
+        "SO2": {
+            "nama": "Sulfur Dioksida (SO₂)",
+            "bahaya": "Iritasi saluran pernapasan dan mata.",
+            "penanganan": "Gunakan ventilasi baik dan alat pelindung diri.",
+            "penyimpanan": "Simpan dalam silinder logam dengan label jelas.",
+            "p3k": "Segera bawa ke udara segar, hubungi medis bila perlu.",
+            "link": "#"
+    },
+        "F2": {
+            "nama": "Fluorin (F₂)",
+            "bahaya": "Sangat reaktif dan beracun, menyebabkan luka bakar kimia.",
+            "penanganan": "Gunakan APD lengkap dan sistem ventilasi tertutup.",
+            "penyimpanan": "Tabung baja tahan korosi khusus untuk F₂.",
+            "p3k": "Segera ke IGD, jangan tunda.",
+            "link": "#"
+    },
+        "Br2": {
+            "nama": "Bromin (Br₂)",
+            "bahaya": "Uap korosif dan iritasi pada saluran pernapasan.",
+            "penanganan": "Gunakan masker dan goggles pelindung.",
+            "penyimpanan": "Botol gelap tahan korosi, jauh dari panas.",
+            "p3k": "Cuci area terkena dan beri udara segar.",
+            "link": "#"
+    },
+        "HCl(g)": {
+            "nama": "Asam Klorida (gas)",
+            "bahaya": "Sangat korosif dan iritasi paru.",
+            "penanganan": "Gunakan pelindung napas dan ventilasi lokal.",
+            "penyimpanan": "Simpan dalam tabung logam bertekanan.",
+            "p3k": "Bilas mata atau kulit, beri udara segar.",
+            "link": "#"
+    },
+        "HF(g)": {
+            "nama": "Asam Fluorida (gas)",
+            "bahaya": "Sangat toksik dan menyerang jaringan dalam.",
+            "penanganan": "Gunakan APD lengkap dan sistem penyaring gas.",
+            "penyimpanan": "Tabung logam tahan korosi, simpan di tempat aman.",
+            "p3k": "Segera ke IGD untuk penanganan darurat.",
+            "link": "#"
+    },
+        "O3": {
+            "nama": "Ozon (O₃)",
+            "bahaya": "Oksidator kuat, menyebabkan iritasi paru-paru.",
+            "penanganan": "Gunakan detektor ozon dan ventilasi baik.",
+            "penyimpanan": "Hindari paparan sinar UV langsung.",
+            "p3k": "Pindahkan ke udara segar, dapatkan bantuan medis.",
+            "link": "#"
+    },
+        "PH3": {
+            "nama": "Fosfin (PH₃)",
+            "bahaya": "Sangat beracun dan mudah meledak.",
+            "penanganan": "Gunakan APD lengkap dan tangani di fume hood.",
+            "penyimpanan": "Simpan dalam silinder baja tertutup rapat.",
+            "p3k": "Segera ke IGD.",
+            "link": "#"
+    },
+        "AsH3": {
+            "nama": "Arsina (AsH₃)",
+            "bahaya": "Toksik berat, menyerang sel darah merah.",
+            "penanganan": "Gunakan respirator, detektor gas, dan APD.",
+            "penyimpanan": "Tabung logam tahan tekanan.",
+            "p3k": "Penanganan medis darurat segera.",
+            "link": "#"
+    },
+        "ClO2": {
+            "nama": "Klorin Dioksida (ClO₂)",
+            "bahaya": "Eksplosif, oksidator kuat dan toksik.",
+            "penanganan": "Tangani dalam kondisi dingin, ventilasi cukup.",
+            "penyimpanan": "Botol gelap bertekanan rendah, jauhkan dari cahaya.",
+            "p3k": "Berikan oksigen dan bantuan medis segera.",
+            "link": "#"
+    },
+        "HNO3(g)": {
+            "nama": "Asam Nitrat Uap",
+            "bahaya": "Korosif dan iritasi berat.",
+            "penanganan": "Gunakan pelindung napas dan goggles.",
+            "penyimpanan": "Tertutup rapat dan jauh dari panas.",
+            "p3k": "Udara segar, bilas dengan air jika kontak.",
+            "link": "#"
+    },
+        "NO": {
+            "nama": "Nitric Oxide (NO)",
+            "bahaya": "Gas reaktif, membentuk NO₂ di udara.",
+            "penanganan": "Ventilasi kuat dan APD lengkap.",
+            "penyimpanan": "Simpan dalam silinder logam.",
+            "p3k": "Berikan oksigen dan pengawasan medis.",
+            "link": "#"
+    },
+        "CO2": {
+            "nama": "Karbon Dioksida (CO₂)",
+            "bahaya": "Dapat menyebabkan sesak napas dalam ruang tertutup.",
+            "penanganan": "Ventilasi baik dan pantau kadar CO₂.",
+            "penyimpanan": "Tabung gas standar tekanan tinggi.",
+            "p3k": "Pindahkan ke tempat terbuka segera.",
+            "link": "#"
+    },
+        "H2": {
+            "nama": "Hidrogen (H₂)",
+            "bahaya": "Gas sangat mudah meledak bila tercampur udara.",
+            "penanganan": "Jauhkan dari api dan percikan listrik.",
+            "penyimpanan": "Simpan dalam tabung tekanan tinggi.",
+            "p3k": "Evakuasi area, beri udara segar.",
+            "link": "#"
+    },
+        "N2O": {
+            "nama": "Nitrous Oxide (N₂O)",
+            "bahaya": "Gas anestesi, memabukkan dalam jumlah tinggi.",
+            "penanganan": "Gunakan ventilasi dan kontrol paparan.",
+            "penyimpanan": "Tabung baja dengan label jelas.",
+            "p3k": "Pindahkan ke udara segar.",
+            "link": "#"
+    },
+        "CH4": {
+            "nama": "Metana (CH₄)",
+            "bahaya": "Gas mudah meledak, tidak beracun tapi mudah terbakar.",
+            "penanganan": "Jauhkan dari sumber api dan gunakan detektor gas.",
+            "penyimpanan": "Silinder gas tertutup rapat.",
+            "p3k": "Ventilasi ruangan dan evakuasi.",
+            "link": "#"
+    }
+}
+    },
+        "Pelarut Organik": {
         "Etanol": {
             "nama": "Etanol (C₂H₅OH)",
             "bahaya": "Mudah terbakar.",
