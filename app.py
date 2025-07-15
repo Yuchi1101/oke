@@ -1,4 +1,5 @@
 import streamlit as st
+image.open("10002208760.jpg")
 
 # Setup awal
 st.set_page_config(page_title="MSDS Wizard", layout="centered")
