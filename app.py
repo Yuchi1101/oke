@@ -61,93 +61,22 @@ msds_data = {
             "p3k": "Jika terkena kulit, bilas dengan air selama 15 menit dan cari bantuan medis.",
             "link": "https://www.merckmillipore.com/Web-VE-Site/en_US/-/VEF/ShowDocument-File?ProductSKU=MDA_CHEM-109973&DocumentType=MSD&DocumentId=109973_SDS_ID_ID.PDF&DocumentUID=406631&Language=ID&Country=ID&Origin=null"
         },
-        
+        "NaOH": {
+            "nama": "Natrium Hidroksida (NaOH)",
+            "bahaya": "Sangat korosif, menyebabkan luka bakar kimia.",
+            "penanganan": "Gunakan APD lengkap: sarung tangan, goggles, jas lab.",
+            "penyimpanan": "Di tempat kering dan tertutup rapat, jauh dari asam.",
+            "p3k": "Jika terkena kulit, bilas dengan air banyak dan segera ke IGD.",
+            "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/221465"
+        },
         "H2SO4": {
-            "nama": "Asam Sulfat (H2SO4)", 
-            "bahaya": "Eksoterm dan korosif", 
-            "penanganan": "Tuang ke air", 
-            "penyimpanan": "Jauh dari air", 
-            "p3k": "Bilas 20 menit", 
+            "nama": "Asam Sulfat (H2SO4)",
+            "bahaya": "Sangat korosif, menghasilkan panas saat bereaksi dengan air.",
+            "penanganan": "Tuangkan asam ke air (jangan sebaliknya), gunakan pelindung lengkap.",
+            "penyimpanan": "Wadah tahan asam, jauh dari bahan organik dan air.",
+            "p3k": "Bilas selama 20 menit, cari pertolongan medis.",
             "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/339741"
-        },
-        
-        "HNO3": {
-            "nama": "Asam Nitrat (HNO₃)", 
-            "bahaya": "Korosif dan oksidator kuat", 
-            "penanganan": "Gunakan APD", 
-            "penyimpanan": "Botol gelap", 
-            "p3k": "Segera bilas", 
-            "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/225937"
-        },
-        
-        "CH3COOH": {
-            "nama": "Asam Asetat (CH₃COOH)", 
-            "bahaya": "Iritasi dan bau menyengat", 
-            "penanganan": "Gunakan pelindung", 
-            "penyimpanan": "Tertutup rapat", 
-            "p3k": "Segera bilas", 
-            "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/320099"
-        },
-        
-        "HBr": {
-            "nama": "Asam Bromida (HBr)", 
-            "bahaya": "Korosif dan beracun", 
-            "penanganan": "Gunakan goggles",
-            "penyimpanan": "Botol kaca",
-            "p3k": "Bilas air", 
-            "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/207409"
-        },
-        
-        "HI": {
-            "nama": "Asam Iodida (HI)", 
-        "bahaya": "Iritasi saluran napas",
-        "penanganan": "Gunakan masker", 
-        "penyimpanan": "Tertutup dan sejuk", 
-        "p3k": "Segera bilas", 
-        "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/207430"},
-        
-        "HF": {
-        "nama": "Asam Fluorida (HF)", 
-        "bahaya": "Sangat toksik, menyerang tulang", 
-        "penanganan": "Sarung tangan khusus", 
-        "penyimpanan": "Botol plastik khusus", 
-        "p3k": "Ke IGD segera", 
-        "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/205228"},
-       
-        "H3PO4": {
-        "nama": "Asam Fosfat (H₃PO₄)",
-        "bahaya": "Iritasi kulit",
-        "penanganan": "Gunakan APD",
-        "penyimpanan": "Tempat tertutup", 
-        "p3k": "Bilas air", 
-        "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/345245"},
-       
-        "H2CO3": {
-        "nama": "Asam Karbonat (H₂CO₃)", "bahaya": "Lemah namun iritasi", "penanganan": "Pelindung standar", "penyimpanan": "Botol tertutup", "p3k": "Cuci air", "link": "#"},
-        
-        "H2C2O4": {"nama": "Asam Oksalat (H₂C₂O₄)", "bahaya": "Beracun", "penanganan": "Gunakan pelindung", "penyimpanan": "Tertutup rapat", "p3k": "Segera bilas", "link": "#"},
-       
-        "HClO4": {"nama": "Asam Perklorat (HClO₄)", "bahaya": "Sangat reaktif", "penanganan": "APD lengkap", "penyimpanan": "Botol tahan asam", "p3k": "Ke IGD", "link": "#"},
-        
-        "H2SeO4": {"nama": "Asam Selenat (H₂SeO₄)", "bahaya": "Toksik", "penanganan": "Masker dan goggles", "penyimpanan": "Jauh dari organik", "p3k": "Udara segar", "link": "#"},
-       
-        "HBO2": {"nama": "Asam Borat (HBO₂)", "bahaya": "Iritasi ringan", "penanganan": "Minimal", "penyimpanan": "Tutup rapat", "p3k": "Bilas air", "link": "#"},
-       
-        "C6H5COOH": {"nama": "Asam Benzoat", "bahaya": "Iritasi mata", "penanganan": "Pelindung standar", "penyimpanan": "Tertutup", "p3k": "Cuci air", "link": "#"},
-        
-        "HSO3Cl": {"nama": "Asam Sulfonat", "bahaya": "Korosif dan berasap", "penanganan": "Ventilasi baik", "penyimpanan": "Botol tahan asam", "p3k": "Segera bilas", "link": "#"},
-        
-        "H2S": {"nama": "Asam Sulfida (gas)", "bahaya": "Beracun, bau busuk", "penanganan": "Masker respirator", "penyimpanan": "Silinder", "p3k": "Ke udara segar", "link": "#"},
-       
-        "CCl3COOH": {"nama": "Asam Trikloroasetat", "bahaya": "Toksik dan iritasi", "penanganan": "APD lengkap", "penyimpanan": "Jauh dari panas", "p3k": "Segera bilas", "link": "#"},
-        
-        "HOCl": {"nama": "Asam Hipoklorit", "bahaya": "Korosif dan oksidator", "penanganan": "Goggles dan sarung tangan", "penyimpanan": "Botol gelap", "p3k": "Cuci air", "link": "#"},
-        
-        "C4H6O6": {"nama": "Asam Tartar", "bahaya": "Iritasi ringan", "penanganan": "APD dasar", "penyimpanan": "Sejuk dan kering", "p3k": "Cuci air", "link": "#"},
-        
-        "C3H6O3": {"nama": "Asam Laktat", "bahaya": "Iritasi kulit", "penanganan": "Pelindung ringan", "penyimpanan": "Tempat tertutup", "p3k": "Bilas air", "link": "#"}
         }
-        
     },
     "Gas Berbahaya": {
         "NH3": {
