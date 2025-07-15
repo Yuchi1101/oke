@@ -1,5 +1,4 @@
 import streamlit as st
-image.open("10002208760.jpg")
 
 # Setup awal
 st.set_page_config(page_title="MSDS Wizard", layout="centered")
@@ -48,7 +47,7 @@ msds_dict = {
 if st.session_state.halaman == 1:
     st.title("🧪 Aplikasi MSDS Bahan Kimia")
     st.markdown("### Selamat Datang!")
-    st.image("https://images.unsplash.com/photo-1581093448796-8a04b3e1e997", use_column_width=True)
+    st.image("https://github.com/Yuchi1101/oke/blob/main/Screenshot%20(1).png", use_column_width=True)
     st.markdown("""
         Aplikasi ini menyediakan informasi MSDS untuk beberapa bahan kimia umum.
         Tekan *Next* untuk memulai.
