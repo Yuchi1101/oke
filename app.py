@@ -52,7 +52,7 @@ with st.sidebar:
 # DAFTAR SENYAWA
 # ---------------------
 msds_data = {
-    "Asam & Basa": {
+    "Asam": {
         "HCl": {
             "nama": "Asam Klorida (HCl)",
             "bahaya": "Korosif kuat, menyebabkan luka bakar pada kulit dan mata.",
@@ -60,14 +60,6 @@ msds_data = {
             "penyimpanan": "Simpan dalam botol kaca/plastik tebal, jauh dari basa.",
             "p3k": "Jika terkena kulit, bilas dengan air selama 15 menit dan cari bantuan medis.",
             "link": "https://www.merckmillipore.com/Web-VE-Site/en_US/-/VEF/ShowDocument-File?ProductSKU=MDA_CHEM-109973&DocumentType=MSD&DocumentId=109973_SDS_ID_ID.PDF&DocumentUID=406631&Language=ID&Country=ID&Origin=null"
-        },
-        "BaCl2": {
-            "nama": "Natrium Hidroksida (Bacl2)",
-            "bahaya": "Sangat korosif, menyebabkan luka bakar kimia.",
-            "penanganan": "Gunakan APD lengkap: sarung tangan, goggles, jas lab.",
-            "penyimpanan": "Di tempat kering dan tertutup rapat, jauh dari asam.",
-            "p3k": "Jika terkena kulit, bilas dengan air banyak dan segera ke IGD.",
-            "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/221465"
         },
         "H2SO4": {
             "nama": "Asam Sulfat (H2SO4)",
@@ -189,6 +181,169 @@ msds_data = {
             "link": "#"
         }
     },
+    "Basa": {
+        "NaOH": {
+            "nama": "Natrium Hidroksida (NaOH)",
+            "bahaya": "Korosif kuat, dapat menyebabkan luka bakar kimia pada kulit dan mata.",
+            "penanganan": "Gunakan alat pelindung diri lengkap, termasuk sarung tangan dan goggles.",
+            "penyimpanan": "Simpan dalam wadah tertutup rapat di tempat sejuk dan kering.",
+            "p3k": "Bilas area terkena dengan banyak air selama minimal 15 menit.",
+            "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/221465"
+    },
+        "KOH": {
+            "nama": "Kalium Hidroksida (KOH)",
+            "bahaya": "Korosif, menyebabkan iritasi kulit dan mata.",
+            "penanganan": "Gunakan pelindung kimia dan hindari kontak langsung.",
+            "penyimpanan": "Simpan di tempat sejuk dan tertutup rapat.",
+            "p3k": "Segera bilas dengan air jika kontak.",
+            "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/221473"
+    },
+        "Ca(OH)2": {
+            "nama": "Kalsium Hidroksida (Ca(OH)₂)",
+            "bahaya": "Iritasi kulit dan mata.",
+            "penanganan": "Gunakan goggles dan sarung tangan.",
+            "penyimpanan": "Disimpan dalam wadah tertutup.",
+            "p3k": "Cuci area terkena dengan air mengalir.",
+            "link": "#"
+    },
+        "Ba(OH)2": {
+            "nama": "Barium Hidroksida",
+            "bahaya": "Beracun dan korosif.",
+            "penanganan": "Gunakan APD lengkap dan ventilasi baik.",
+            "penyimpanan": "Jauhkan dari air dan kelembaban.",
+            "p3k": "Segera hubungi layanan medis.",
+            "link": "#"
+    },
+        "NH4OH": {
+            "nama": "Amonium Hidroksida",
+            "bahaya": "Menghasilkan uap menyengat yang iritatif.",
+            "penanganan": "Gunakan ventilasi yang memadai dan pelindung pernapasan.",
+            "penyimpanan": "Simpan dalam botol tertutup rapat.",
+            "p3k": "Segera bawa ke udara segar.",
+            "link": "#"
+    },
+        "LiOH": {
+            "nama": "Litium Hidroksida",
+            "bahaya": "Iritasi kuat pada kulit dan saluran pernapasan.",
+            "penanganan": "Gunakan sarung tangan dan masker.",
+            "penyimpanan": "Tempat kering dan tertutup rapat.",
+            "p3k": "Cuci dengan air mengalir.",
+            "link": "#"
+    },
+        "Mg(OH)2": {
+            "nama": "Magnesium Hidroksida",
+            "bahaya": "Iritasi ringan pada kulit dan mata.",
+            "penanganan": "Penanganan minimal dengan APD dasar.",
+            "penyimpanan": "Simpan di tempat kering dan tertutup.",
+            "p3k": "Bilas dengan air bersih.",
+            "link": "#"
+    },
+        "Sr(OH)2": {
+            "nama": "Stronsium Hidroksida",
+            "bahaya": "Korosif, dapat menyebabkan luka kimia.",
+            "penanganan": "Gunakan pelindung kulit dan goggles.",
+            "penyimpanan": "Simpan dalam wadah tertutup rapat.",
+            "p3k": "Cuci dengan air bersih jika terkena.",
+            "link": "#"
+    },
+        "Al(OH)3": {
+            "nama": "Aluminium Hidroksida",
+            "bahaya": "Iritasi ringan bila terhirup atau kontak langsung.",
+            "penanganan": "Gunakan masker debu dan APD dasar.",
+            "penyimpanan": "Simpan di tempat sejuk dan kering.",
+            "p3k": "Bilas dengan air bersih.",
+            "link": "#"
+    },
+        "Zn(OH)2": {
+            "nama": "Seng Hidroksida",
+            "bahaya": "Dapat mengiritasi mata dan kulit.",
+            "penanganan": "Gunakan pelindung mata dan sarung tangan.",
+            "penyimpanan": "Tutup rapat dan jauhkan dari kelembapan.",
+            "p3k": "Cuci mata atau kulit dengan air mengalir.",
+            "link": "#"
+    },
+        "Fe(OH)3": {
+            "nama": "Besi(III) Hidroksida",
+            "bahaya": "Iritasi ringan jika terhirup atau kontak.",
+            "penanganan": "Gunakan masker debu dan APD standar.",
+            "penyimpanan": "Botol tertutup dan kering.",
+            "p3k": "Bilas dengan air jika kontak.",
+            "link": "#"
+    },
+        "Cr(OH)3": {
+            "nama": "Kromium(III) Hidroksida",
+            "bahaya": "Korosif dan berpotensi toksik.",
+            "penanganan": "Gunakan APD lengkap dan tangani di fume hood.",
+            "penyimpanan": "Jauhkan dari bahan asam.",
+            "p3k": "Dapatkan bantuan medis segera.",
+            "link": "#"
+    },
+        "Ni(OH)2": {
+            "nama": "Nikel(II) Hidroksida",
+            "bahaya": "Iritasi saluran pernapasan dan kulit.",
+            "penanganan": "Gunakan masker dan ventilasi cukup.",
+            "penyimpanan": "Simpan dalam botol tertutup.",
+            "p3k": "Pindahkan ke udara segar, konsultasikan medis.",
+            "link": "#"
+    },
+        "Cu(OH)2": {
+            "nama": "Tembaga(II) Hidroksida",
+            "bahaya": "Iritasi kulit dan mata.",
+            "penanganan": "Gunakan sarung tangan dan goggles.",
+            "penyimpanan": "Tempat sejuk dan tertutup.",
+            "p3k": "Cuci area terkena dengan air.",
+            "link": "#"
+    },
+        "AgOH": {
+            "nama": "Perak Hidroksida",
+            "bahaya": "Tidak stabil, dapat terurai.",
+            "penanganan": "Tangani dengan hati-hati dan minimalkan eksposur.",
+            "penyimpanan": "Simpan dalam botol gelap dan sejuk.",
+            "p3k": "Cuci dengan air jika kontak.",
+            "link": "#"
+    },
+        "Pb(OH)2": {
+            "nama": "Timbal(II) Hidroksida",
+            "bahaya": "Toksik berat, terutama jika terhirup.",
+            "penanganan": "Gunakan APD lengkap dan ventilasi baik.",
+            "penyimpanan": "Tertutup rapat, kering, dan berlabel jelas.",
+            "p3k": "Segera bawa ke IGD.",
+            "link": "#"
+    },
+        "Sn(OH)2": {
+            "nama": "Timah(II) Hidroksida",
+            "bahaya": "Iritasi kulit dan mata.",
+            "penanganan": "Gunakan pelindung dasar seperti sarung tangan.",
+            "penyimpanan": "Tempat sejuk dan tertutup.",
+            "p3k": "Bilas dengan air bersih.",
+            "link": "#"
+    },
+        "Bi(OH)3": {
+            "nama": "Bismut(III) Hidroksida",
+            "bahaya": "Dapat mengiritasi mata.",
+            "penanganan": "Gunakan goggles dan ventilasi cukup.",
+            "penyimpanan": "Simpan di tempat kering dan tertutup.",
+            "p3k": "Cuci mata atau kulit dengan air.",
+            "link": "#"
+    },
+        "Be(OH)2": {
+            "nama": "Berilium Hidroksida",
+            "bahaya": "Sangat toksik dan karsinogenik.",
+            "penanganan": "Gunakan APD lengkap dan ventilasi maksimal.",
+            "penyimpanan": "Botol tertutup dan berlabel bahaya tinggi.",
+            "p3k": "Segera ke IGD untuk penanganan darurat.",
+            "link": "#"
+    },
+        "Co(OH)2": {
+            "nama": "Kobalt(II) Hidroksida",
+            "bahaya": "Iritasi dan berbahaya bila terhirup atau tertelan.",
+            "penanganan": "Gunakan respirator dan sarung tangan.",
+            "penyimpanan": "Wadah tertutup, jauh dari kelembaban.",
+            "p3k": "Bawa ke udara segar, dapatkan bantuan medis.",
+            "link": "#"
+    }
+}
+    },
     "Gas Berbahaya": {
         "NH3": {
             "nama": "Amonia (NH₃)",
@@ -210,19 +365,164 @@ msds_data = {
     "Pelarut Organik": {
         "Etanol": {
             "nama": "Etanol (C₂H₅OH)",
-            "bahaya": "Mudah terbakar, uap menyebabkan pusing.",
-            "penanganan": "Gunakan di ruang berventilasi, jauhkan dari api.",
-            "penyimpanan": "Wadah tertutup rapat, suhu ruang.",
-            "p3k": "Jika kontak mata, bilas. Jika terhirup, ke udara segar.",
+            "bahaya": "Mudah terbakar.",
+            "penanganan": "Jauhkan dari api dan sumber panas.",
+            "penyimpanan": "Simpan dalam wadah tertutup pada suhu ruang.",
+            "p3k": "Pindahkan ke udara segar jika terhirup.",
             "link": "https://www.sigmaaldrich.com/ID/en/sds/aldrich/459836"
-        },
-        "Methanol": {
+    },
+        "Metanol": {
             "nama": "Metanol (CH₃OH)",
-            "bahaya": "Beracun, mudah terbakar, bisa sebabkan kebutaan.",
-            "penanganan": "Gunakan sarung tangan dan pelindung wajah.",
-            "penyimpanan": "Simpan di tempat sejuk, tertutup rapat.",
-            "p3k": "Jangan muntah, segera ke rumah sakit.",
+            "bahaya": "Toksik, paparan dapat menyebabkan kebutaan.",
+            "penanganan": "Gunakan sarung tangan dan hindari kontak langsung.",
+            "penyimpanan": "Simpan di tempat sejuk dan berventilasi baik.",
+            "p3k": "Segera bawa ke fasilitas medis jika terpapar.",
             "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/34860"
+    },
+        "Aseton": {
+            "nama": "Aseton (CH₃COCH₃)",
+            "bahaya": "Mudah terbakar.",
+            "penanganan": "Jauhkan dari api dan sumber panas.",
+            "penyimpanan": "Simpan dalam botol tertutup rapat.",
+            "p3k": "Pastikan ventilasi baik dan bawa ke udara segar.",
+            "link": "#"
+    },
+        "Benzena": {
+            "nama": "Benzena",
+            "bahaya": "Karsinogenik dan beracun.",
+            "penanganan": "Gunakan masker dan alat pelindung diri lengkap.",
+            "penyimpanan": "Simpan di tempat dingin dan berventilasi.",
+            "p3k": "Segera cari bantuan medis jika terpapar.",
+            "link": "#"
+    },
+        "Toluena": {
+            "nama": "Toluena",
+            "bahaya": "Mudah menguap dan berbahaya jika terhirup.",
+            "penanganan": "Gunakan di area berventilasi baik.",
+            "penyimpanan": "Simpan dalam botol gelap yang tertutup rapat.",
+            "p3k": "Pindahkan ke udara segar jika terpapar.",
+            "link": "#"
+    },
+        "Xilena": {
+            "nama": "Xilena",
+            "bahaya": "Iritasi dan bersifat racun.",
+            "penanganan": "Gunakan pelindung pernapasan dan APD.",
+            "penyimpanan": "Simpan di tempat kering dan tertutup.",
+            "p3k": "Pindahkan ke udara segar.",
+            "link": "#"
+    },
+        "Kloroform": {
+            "nama": "Kloroform",
+            "bahaya": "Bersifat narkotik dan toksik.",
+            "penanganan": "Gunakan masker uap organik dan APD.",
+            "penyimpanan": "Simpan dalam botol gelap, jauh dari cahaya.",
+            "p3k": "Bawa ke IGD segera jika terpapar.",
+            "link": "#"
+    },
+        "Diethyl Ether": {
+            "nama": "Dietil Eter",
+            "bahaya": "Sangat mudah terbakar dan mudah meledak.",
+            "penanganan": "Jauhkan dari listrik statis dan api.",
+            "penyimpanan": "Gunakan botol tahan tekanan dan tertutup rapat.",
+            "p3k": "Evakuasi area dan cari bantuan medis.",
+            "link": "#"
+    },
+        "Tetrahidrofuran": {
+            "nama": "Tetrahidrofuran (THF)",
+            "bahaya": "Reaktif dengan udara dan mudah terbakar.",
+            "penanganan": "Gunakan alat pelindung diri lengkap.",
+            "penyimpanan": "Simpan dalam botol gelap yang tertutup.",
+            "p3k": "Pindahkan ke udara segar.",
+            "link": "#"
+    },
+        "DMSO": {
+            "nama": "Dimetilsulfoksida (DMSO)",
+            "bahaya": "Dapat menembus kulit dan membawa zat lain ke dalam tubuh.",
+            "penanganan": "Gunakan sarung tangan khusus dan APD.",
+            "penyimpanan": "Simpan tertutup rapat di tempat sejuk.",
+            "p3k": "Cuci dengan air mengalir jika kontak dengan kulit.",
+            "link": "#"
+    },
+        "Formamida": {
+            "nama": "Formamida",
+            "bahaya": "Toksik jika terhirup atau terserap kulit.",
+            "penanganan": "Gunakan di ruang berventilasi baik.",
+            "penyimpanan": "Simpan di tempat kering dan tertutup.",
+            "p3k": "Pindahkan ke udara segar.",
+            "link": "#"
+    },
+        "Pyridine": {
+            "nama": "Piridin",
+            "bahaya": "Bau menyengat dan bersifat iritasi.",
+            "penanganan": "Gunakan masker dan APD.",
+            "penyimpanan": "Simpan dalam botol tertutup rapat.",
+            "p3k": "Bilas area kontak dan pindahkan ke udara segar.",
+            "link": "#"
+    },
+        "Aniline": {
+            "nama": "Anilin",
+            "bahaya": "Toksik dan karsinogenik.",
+            "penanganan": "Gunakan alat pelindung diri lengkap.",
+            "penyimpanan": "Simpan dalam wadah gelap dan tertutup.",
+            "p3k": "Segera ke rumah sakit jika terpapar.",
+            "link": "#"
+    },
+        "Nitrobenzene": {
+            "nama": "Nitrobenzena",
+            "bahaya": "Toksik kuat dan dapat merusak organ.",
+            "penanganan": "Gunakan pelindung lengkap dan kerja di fume hood.",
+            "penyimpanan": "Simpan tertutup rapat, jauh dari panas.",
+            "p3k": "Segera cari pertolongan medis.",
+            "link": "#"
+    },
+        "Butanol": {
+            "nama": "Butanol",
+            "bahaya": "Mudah terbakar dan iritasi.",
+            "penanganan": "Hindari api dan gunakan ventilasi baik.",
+            "penyimpanan": "Simpan dalam botol aman dan tertutup.",
+            "p3k": "Pindahkan ke udara segar dan beri ventilasi.",
+            "link": "#"
+    },
+        "Isopropanol": {
+            "nama": "Isopropil Alkohol",
+            "bahaya": "Mudah terbakar dan menyebabkan iritasi.",
+            "penanganan": "Jauhkan dari panas dan nyala api.",
+            "penyimpanan": "Gunakan botol kaca/plastik yang tertutup.",
+            "p3k": "Pindahkan ke udara segar jika terhirup.",
+            "link": "#"
+    },
+        "Hexane": {
+            "nama": "Heksana",
+            "bahaya": "Neurotoksik dan mudah menguap.",
+            "penanganan": "Gunakan ventilasi baik dan APD.",
+            "penyimpanan": "Simpan dalam wadah tertutup rapat.",
+            "p3k": "Pindahkan ke udara segar.",
+            "link": "#"
+    },
+        "Cyclohexane": {
+            "nama": "Sikloheksana",
+            "bahaya": "Iritasi dan mudah terbakar.",
+            "penanganan": "Gunakan pelindung kimia lengkap.",
+            "penyimpanan": "Simpan dalam wadah tertutup rapat.",
+            "p3k": "Pindahkan ke udara segar.",
+            "link": "#"
+    },
+        "Acetonitrile": {
+            "nama": "Asetonitril",
+            "bahaya": "Beracun dan mudah terbakar.",
+            "penanganan": "Gunakan pelindung lengkap dan kerja di fume hood.",
+            "penyimpanan": "Simpan dalam wadah tertutup rapat.",
+            "p3k": "Segera cari pertolongan medis.",
+            "link": "#"
+    },
+        "Chlorobenzene": {
+            "nama": "Klorobenzena",
+            "bahaya": "Iritasi dan bersifat toksik.",
+            "penanganan": "Gunakan ventilasi dan masker.",
+            "penyimpanan": "Simpan dalam botol tertutup dan jauh dari panas.",
+            "p3k": "Cuci area terkena dan pindahkan ke udara segar.",
+            "link": "#"
+        
         }
     }
 }
