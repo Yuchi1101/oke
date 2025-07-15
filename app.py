@@ -4,7 +4,7 @@ st.markdown("""
     <style>
         /* ===== LATAR BELAKANG SENYAWA KIMIA ===== */
         .stApp {
-            background-image: url("https://wallpaperflare.com/static/1014/1000/242/molecule-chemistry-science-3d-wallpaper.jpg");
+            background-image: url("https://wallpaperaccess.com/full/3518423.jpg");
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
