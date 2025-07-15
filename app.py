@@ -22,21 +22,15 @@ if 'nim' not in st.session_state:
     st.session_state.nim = ""
 
 # ---------------------
-# NAVIGASI CEPAT (SIDEBAR)
+# NAVIGASI
 # ---------------------
+def next(): st.session_state.halaman += 1
+def back(): st.session_state.halaman -= 1
+
 with st.sidebar:
-    st.markdown("## 🔀 Navigasi Cepat")
-    if st.button("🏠 Ke Beranda"):
+    st.markdown("## 🚀 Navigasi Cepat")
+    if st.button("🏠 Kembali ke Beranda"):
         st.session_state.halaman = 1
-        st.session_state.kuis_selesai = False
-    if st.button("📘 Tentang"):
-        st.session_state.halaman = 2
-        st.session_state.kuis_selesai = False
-    if st.button("📄 Data MSDS"):
-        st.session_state.halaman = 3
-        st.session_state.kuis_selesai = False
-    if st.button("📝 Kuis"):
-        st.session_state.halaman = 4
         st.session_state.kuis_selesai = False
 
 # ---------------------
@@ -128,24 +122,16 @@ isian = [
 # ---------------------
 if st.session_state.halaman == 1:
     st.title("💻 Web Pengenalan Risiko dan Cara Menangani Senyawa Kimia Umum")
-    st.markdown("### 👥 Kelompok 10 - LPK")
-    st.markdown("""
-    *Anggota:*
+    st.markdown("### 👥 Kelompok 3 - Kimia Dasar Praktikum")
+    st.markdown("""*Anggota:*
     1. Aurellia Syafa Ghania (2460339)
     2. Hafis Dwi Bahariyanto (2460381)
     3. Nabilah Afrina Fatin (2460448)
     4. Raden Siti Nurul Rachma (2460486)
-    5. Yuchi Berliana Resti (2460540)
+    5. Yuchi Berliana Resti (2460540) 
+   
     """)
-
-    st.markdown("""
-    Aplikasi ini memberikan pemahaman tentang:
-    - Risiko bahan kimia
-    - Penanganan & penyimpanan yang benar
-    - Tautan langsung ke MSDS
-
-    👉 Klik *Next* untuk mulai!
-    """)
+    st.image("https://images.unsplash.com/photo-1581093448796-8a04b3e1e997", use_column_width=True)
     st.button("Next ▶", on_click=next)
 
 # ---------------------
