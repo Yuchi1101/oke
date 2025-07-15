@@ -1,40 +1,121 @@
 import streamlit as st
 
 # ---------------------
-# KONFIGURASI HALAMAN
+# KONFIGURASI
 # ---------------------
 st.set_page_config(page_title="Web Risiko & Penanganan Bahan Kimia", layout="centered")
+
+# ---------------------
+# INISIALISASI SESSION
+# ---------------------
 if 'halaman' not in st.session_state:
     st.session_state.halaman = 1
-
-def next():
-    st.session_state.halaman += 1
-
-def back():
-    st.session_state.halaman -= 1
+if 'kuis_selesai' not in st.session_state:
+    st.session_state.kuis_selesai = False
+if 'jawaban_pg' not in st.session_state:
+    st.session_state.jawaban_pg = {}
+if 'jawaban_isian' not in st.session_state:
+    st.session_state.jawaban_isian = {}
+if 'nama' not in st.session_state:
+    st.session_state.nama = ""
+if 'nim' not in st.session_state:
+    st.session_state.nim = ""
 
 # ---------------------
-# NAVIGASI CEPAT (SIDEBAR)
+# NAVIGASI
 # ---------------------
+def next(): st.session_state.halaman += 1
+def back(): st.session_state.halaman -= 1
+
 with st.sidebar:
-    st.markdown("## 🔀 Navigasi Cepat")
-    if st.button("🏠 Ke Beranda"):
+    st.markdown("## 🚀 Navigasi Cepat")
+    if st.button("🏠 Kembali ke Beranda"):
         st.session_state.halaman = 1
-        st.session_state.kuis_selesai = False
-    if st.button("📘 Tentang"):
-        st.session_state.halaman = 2
-        st.session_state.kuis_selesai = False
-    if st.button("📄 Data MSDS"):
-        st.session_state.halaman = 3
-        st.session_state.kuis_selesai = False
-    if st.button("📝 Kuis"):
-        st.session_state.halaman = 4
         st.session_state.kuis_selesai = False
 
 # ---------------------
 # DATA MSDS
 # ---------------------
-# (isi sama seperti sebelumnya, tidak diulang agar tidak terlalu panjang — silakan gunakan bagian msds_data dari skrip kamu)
+msds_data = {
+    "Asam & Basa": {
+        "HCl": {
+            "nama": "Asam Klorida (HCl)",
+            "bahaya": "Korosif kuat, menyebabkan luka bakar pada kulit dan mata.",
+            "penanganan": "Gunakan sarung tangan tahan asam, pelindung mata, dan masker.",
+            "penyimpanan": "Simpan dalam botol kaca/plastik tebal, jauh dari basa.",
+            "p3k": "Jika terkena kulit, bilas dengan air selama 15 menit dan cari bantuan medis.",
+            "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/320331"
+        },
+        "NaOH": {
+            "nama": "Natrium Hidroksida (NaOH)",
+            "bahaya": "Sangat korosif, menyebabkan luka bakar kimia.",
+            "penanganan": "Gunakan APD lengkap: sarung tangan, goggles, jas lab.",
+            "penyimpanan": "Di tempat kering dan tertutup rapat, jauh dari asam.",
+            "p3k": "Jika terkena kulit, bilas dengan air banyak dan segera ke IGD.",
+            "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/221465"
+        },
+        "H2SO4": {
+            "nama": "Asam Sulfat (H2SO4)",
+            "bahaya": "Sangat korosif, menghasilkan panas saat bereaksi dengan air.",
+            "penanganan": "Tuangkan asam ke air (jangan sebaliknya), gunakan pelindung lengkap.",
+            "penyimpanan": "Wadah tahan asam, jauh dari bahan organik dan air.",
+            "p3k": "Bilas selama 20 menit, cari pertolongan medis.",
+            "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/339741"
+        }
+    },
+    "Gas Berbahaya": {
+        "NH3": {
+            "nama": "Amonia (NH₃)",
+            "bahaya": "Gas beracun, menyengat, mengiritasi saluran napas.",
+            "penanganan": "Gunakan pelindung pernapasan, pastikan ventilasi cukup.",
+            "penyimpanan": "Tabung logam tertutup, jauh dari panas dan asam.",
+            "p3k": "Segera bawa ke udara segar, cari bantuan medis.",
+            "link": "https://www.sigmaaldrich.com/ID/en/sds/aldrich/338818"
+        },
+        "Cl2": {
+            "nama": "Klorin (Cl₂)",
+            "bahaya": "Gas kuning-hijau, sangat toksik.",
+            "penanganan": "Gunakan respirator, goggles, pastikan ventilasi baik.",
+            "penyimpanan": "Silinder baja, jauh dari panas dan bahan reduktor.",
+            "p3k": "Evakuasi ke udara segar, beri oksigen bila perlu.",
+            "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/401279"
+        }
+    },
+    "Pelarut Organik": {
+        "Etanol": {
+            "nama": "Etanol (C₂H₅OH)",
+            "bahaya": "Mudah terbakar, uap menyebabkan pusing.",
+            "penanganan": "Gunakan di ruang berventilasi, jauhkan dari api.",
+            "penyimpanan": "Wadah tertutup rapat, suhu ruang.",
+            "p3k": "Jika kontak mata, bilas. Jika terhirup, ke udara segar.",
+            "link": "https://www.sigmaaldrich.com/ID/en/sds/aldrich/459836"
+        },
+        "Methanol": {
+            "nama": "Metanol (CH₃OH)",
+            "bahaya": "Beracun, mudah terbakar, bisa sebabkan kebutaan.",
+            "penanganan": "Gunakan sarung tangan dan pelindung wajah.",
+            "penyimpanan": "Simpan di tempat sejuk, tertutup rapat.",
+            "p3k": "Jangan muntah, segera ke rumah sakit.",
+            "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/34860"
+        }
+    }
+}
+
+# ---------------------
+# DATA KUIS
+# ---------------------
+pg = [
+    {"soal": "Fungsi MSDS adalah...", "opsi": ["Label botol", "Panduan eksperimen", "Informasi bahan kimia", "Lembar nilai"], "jawaban": "Informasi bahan kimia"},
+    {"soal": "Senyawa Etanol termasuk...", "opsi": ["Asam", "Basa", "Gas", "Pelarut organik"], "jawaban": "Pelarut organik"},
+    {"soal": "Bahaya utama Cl2 adalah...", "opsi": ["Inflamasi kulit", "Bau harum", "Toksik", "Flu"], "jawaban": "Toksik"},
+    {"soal": "Metanol jika tertelan dapat menyebabkan...", "opsi": ["Sakit perut", "Buta", "Pilek", "Demam"], "jawaban": "Buta"},
+    {"soal": "NaOH sebaiknya tidak disimpan dekat dengan...", "opsi": ["Asam", "Air", "Alkohol", "Besi"], "jawaban": "Asam"},
+]
+
+isian = [
+    {"soal": "Apa bahaya utama dari HCl?", "jawaban": ["korosif", "iritasi", "membakar"]},
+    {"soal": "Mengapa H2SO4 tidak boleh dituangkan ke air?", "jawaban": ["eksoterm", "panas", "reaksi eksoterm"]},
+]
 
 # ---------------------
 # HALAMAN 1: BERANDA
@@ -42,40 +123,27 @@ with st.sidebar:
 if st.session_state.halaman == 1:
     st.title("💻 Web Pengenalan Risiko dan Cara Menangani Senyawa Kimia Umum")
     st.markdown("### 👥 Kelompok 3 - Kimia Dasar Praktikum")
+    st.markdown("""
+    *Anggota:*
+    1. Ani Rahmawati
+    2. Budi Prasetyo
+    3. Citra Lestari
+    4. Dedi Kurniawan
+    5. Eka Wulandari
+    """)
     st.image("https://images.unsplash.com/photo-1581093448796-8a04b3e1e997", use_column_width=True)
-
-    st.markdown("#### 👩‍🔬 Anggota Kelompok:")
-    st.markdown("""
-    1. Ahmad Rizky Pratama (2310001)  
-    2. Bella Rahmawati (2310002)  
-    3. Chandra Permana (2310003)  
-    4. Dwi Lestari (2310004)  
-    5. Eka Nurhaliza (2310005)  
-    """)
-
-    st.markdown("""
-    Aplikasi ini memberikan pemahaman tentang:
-    - Risiko bahan kimia
-    - Penanganan & penyimpanan yang benar
-    - Tautan langsung ke MSDS
-
-    👉 Klik *Next* untuk mulai!
-    """)
     st.button("Next ▶", on_click=next)
 
 # ---------------------
-# HALAMAN 2: PENJELASAN UMUM
+# HALAMAN 2: PENJELASAN
 # ---------------------
 elif st.session_state.halaman == 2:
-    st.title("📘 Tentang Aplikasi")
+    st.title("📘 Tentang MSDS")
     st.markdown("""
-    *MSDS (Material Safety Data Sheet)* adalah dokumen resmi berisi:
-    - Bahaya bahan kimia
-    - Cara penanganan aman
-    - Prosedur P3K dan penyimpanan
-    - Tautan ke sumber resmi
-
-    👉 Klik *Next* untuk eksplorasi bahan kimia.
+    *Material Safety Data Sheet (MSDS)* adalah dokumen penting yang memuat:
+    - Identifikasi bahan dan bahayanya
+    - Langkah-langkah pertolongan pertama
+    - Prosedur penanganan dan penyimpanan yang aman
     """)
     col1, col2 = st.columns(2)
     col1.button("⬅ Back", on_click=back)
@@ -85,19 +153,17 @@ elif st.session_state.halaman == 2:
 # HALAMAN 3: DATA MSDS
 # ---------------------
 elif st.session_state.halaman == 3:
-    st.title("📄 Informasi MSDS Berdasarkan Kategori")
-
-    kategori = st.selectbox("📚 Pilih Kategori Senyawa:", list(msds_data.keys()))
-    senyawa = st.selectbox("🧪 Pilih Senyawa:", list(msds_data[kategori].keys()))
-
+    st.title("📄 Informasi MSDS")
+    kategori = st.selectbox("Pilih kategori:", list(msds_data.keys()))
+    senyawa = st.selectbox("Pilih senyawa:", list(msds_data[kategori].keys()))
     data = msds_data[kategori][senyawa]
-    st.subheader(f"📋 MSDS untuk {senyawa}")
-    st.markdown(f"*Nama Bahan:* {data['nama']}")
+
+    st.subheader(data["nama"])
     st.markdown(f"*Bahaya:* {data['bahaya']}")
     st.markdown(f"*Penanganan:* {data['penanganan']}")
     st.markdown(f"*Penyimpanan:* {data['penyimpanan']}")
     st.markdown(f"*P3K:* {data['p3k']}")
-    st.markdown(f"📎 [🔗 Lihat MSDS Resmi]({data['link']})")
+    st.markdown(f"📄 [Lihat MSDS Lengkap]({data['link']})")
 
     col1, col2 = st.columns(2)
     col1.button("⬅ Back", on_click=back)
@@ -107,74 +173,50 @@ elif st.session_state.halaman == 3:
 # HALAMAN 4: KUIS
 # ---------------------
 elif st.session_state.halaman == 4:
-    st.title("📝 Kuis: Risiko & Penanganan Bahan Kimia")
-
-    if 'kuis_selesai' not in st.session_state:
-        st.session_state.kuis_selesai = False
-        st.session_state.skor = 0
+    st.title("📝 Kuis Pengayaan")
 
     if not st.session_state.kuis_selesai:
-        with st.form("form_kuis"):
-            nama = st.text_input("Nama Lengkap")
-            nim = st.text_input("NIM")
-            prodi = st.text_input("Kelas / Prodi")
+        st.session_state.nama = st.text_input("Nama:")
+        st.session_state.nim = st.text_input("NIM:")
 
-            st.markdown("### 📌 Soal Pilihan Ganda")
-            pg = [
-                {"soal": "Fungsi MSDS adalah...", "opsi": ["Label botol", "Panduan eksperimen", "Informasi bahan kimia", "Lembar nilai"], "jawaban": "Informasi bahan kimia"},
-                {"soal": "Senyawa Etanol termasuk...", "opsi": ["Asam", "Basa", "Gas", "Pelarut organik"], "jawaban": "Pelarut organik"},
-                {"soal": "Bahaya utama Cl2 adalah...", "opsi": ["Inflamasi kulit", "Bau harum", "Toksik", "Flu"], "jawaban": "Toksik"},
-                {"soal": "Metanol jika tertelan dapat menyebabkan...", "opsi": ["Sakit perut", "Buta", "Pilek", "Demam"], "jawaban": "Buta"},
-                {"soal": "NaOH sebaiknya tidak disimpan dekat dengan...", "opsi": ["Asam", "Air", "Alkohol", "Besi"], "jawaban": "Asam"},
-            ]
+        st.markdown("### Soal Pilihan Ganda")
+        for i, soal in enumerate(pg):
+            st.session_state.jawaban_pg[i] = st.radio(soal["soal"], soal["opsi"], key=f"pg_{i}")
 
-            skor_pg = 0
-            jawaban_pg_user = []
+        st.markdown("### Soal Isian")
+        for i, soal in enumerate(isian):
+            st.session_state.jawaban_isian[i] = st.text_input(soal["soal"], key=f"isian_{i}")
 
-            for i, q in enumerate(pg):
-                jwb = st.radio(f"{i+1}. {q['soal']}", q["opsi"], key=f"pg{i}")
-                jawaban_pg_user.append(jwb)
-                if jwb == q["jawaban"]:
-                    skor_pg += 1
-
-            st.markdown("### ✍ Soal Isian")
-            isian = [
-                {"soal": "Apa bahaya utama dari HCl?", "jawaban": ["korosif", "iritasi", "membakar"]},
-                {"soal": "Mengapa H2SO4 tidak boleh dituangkan ke air?", "jawaban": ["eksoterm", "panas", "reaksi eksoterm"]},
-            ]
-
-            skor_isian = 0
-            jawaban_isian_user = []
-
-            for i, q in enumerate(isian):
-                jawaban = st.text_input(f"{i+1}. {q['soal']}", key=f"isian{i}")
-                jawaban_isian_user.append(jawaban)
-                if jawaban.strip().lower() in [x.lower() for x in q["jawaban"]]:
-                    skor_isian += 1
-
-            submitted = st.form_submit_button("✅ Submit")
-            if submitted:
-                st.session_state.kuis_selesai = True
-                st.session_state.skor = skor_pg + skor_isian
-                st.session_state.jml_soal = len(pg) + len(isian)
-                st.session_state.jawaban_pg_user = jawaban_pg_user
-                st.session_state.jawaban_isian_user = jawaban_isian_user
-
+        if st.button("Kumpulkan Jawaban"):
+            st.session_state.kuis_selesai = True
     else:
-        st.success(f"🎉 Skor Akhir: {st.session_state.skor} / {st.session_state.jml_soal}")
-        st.markdown("### 📖 Kunci Jawaban")
+        benar = 0
+        st.markdown(f"*Nama:* {st.session_state.nama}")
+        st.markdown(f"*NIM:* {st.session_state.nim}")
+        st.markdown("---")
 
-        for i, q in enumerate(pg):
-            user_jwb = st.session_state.jawaban_pg_user[i]
-            benar = "✅" if user_jwb == q['jawaban'] else "❌"
-            st.markdown(f"{i+1}. {q['soal']}\n- Jawaban Anda: {user_jwb} {benar}\n- Jawaban Benar: {q['jawaban']}")
+        for i, soal in enumerate(pg):
+            jwb = st.session_state.jawaban_pg[i]
+            kunci = soal["jawaban"]
+            st.markdown(f"{i+1}. {soal['soal']}")
+            st.write(f"Jawaban kamu: {jwb}")
+            st.write(f"Kunci: {kunci}")
+            if jwb == kunci:
+                benar += 1
 
-        for i, q in enumerate(isian):
-            user_isian = st.session_state.jawaban_isian_user[i]
-            cocok = user_isian.strip().lower() in [x.lower() for x in q['jawaban']]
-            benar = "✅" if cocok else "❌"
-            st.markdown(f"*Isian {i+1}: {q['soal']}*\n- Jawaban Anda: {user_isian} {benar}\n- Contoh Jawaban: {q['jawaban'][0]}")
+        for i, soal in enumerate(isian):
+            jwb = st.session_state.jawaban_isian[i].strip().lower()
+            kunci_list = soal["jawaban"]
+            st.markdown(f"{i+1+len(pg)}. {soal['soal']}")
+            st.write(f"Jawaban kamu: {jwb}")
+            st.write(f"Kunci kemungkinan: {', '.join(kunci_list)}")
+            if jwb in kunci_list:
+                benar += 1
 
-        if st.button("🏠 Kembali ke Halaman Awal"):
+        total = len(pg) + len(isian)
+        skor = round((benar / total) * 100, 2)
+        st.success(f"🎉 Skor Akhir: {skor} / 100")
+
+        if st.button("⬅ Kembali ke Halaman Awal"):
             st.session_state.halaman = 1
             st.session_state.kuis_selesai = False
