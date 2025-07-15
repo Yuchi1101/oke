@@ -60,38 +60,43 @@ msds_data = {
             "penyimpanan": "Simpan dalam botol kaca/plastik tebal, jauh dari basa.",
             "p3k": "Jika terkena kulit, bilas dengan air selama 15 menit dan cari bantuan medis.",
             "link": "https://www.merckmillipore.com/Web-VE-Site/en_US/-/VEF/ShowDocument-File?ProductSKU=MDA_CHEM-109973&DocumentType=MSD&DocumentId=109973_SDS_ID_ID.PDF&DocumentUID=406631&Language=ID&Country=ID&Origin=null"
-https://www.sigmaaldrich.com/ID/en/sds/ sial/320331"},
+        },
+        
         "H2SO4": {
-        "nama": "Asam Sulfat (H2SO4)", 
-        "bahaya": "Eksoterm dan korosif", 
-        "penanganan": "Tuang ke air", 
-        "penyimpanan": "Jauh dari air", 
-        "p3k": "Bilas 20 menit", 
-        "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/339741"},
+            "nama": "Asam Sulfat (H2SO4)", 
+            "bahaya": "Eksoterm dan korosif", 
+            "penanganan": "Tuang ke air", 
+            "penyimpanan": "Jauh dari air", 
+            "p3k": "Bilas 20 menit", 
+            "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/339741"
+        },
         
         "HNO3": {
-        "nama": "Asam Nitrat (HNO₃)", 
-        "bahaya": "Korosif dan oksidator kuat", 
-        "penanganan": "Gunakan APD", 
-        "penyimpanan": "Botol gelap", 
-        "p3k": "Segera bilas", 
-        "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/225937"},
+            "nama": "Asam Nitrat (HNO₃)", 
+            "bahaya": "Korosif dan oksidator kuat", 
+            "penanganan": "Gunakan APD", 
+            "penyimpanan": "Botol gelap", 
+            "p3k": "Segera bilas", 
+            "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/225937"
+        },
         
         "CH3COOH": {
-        "nama": "Asam Asetat (CH₃COOH)", 
-        "bahaya": "Iritasi dan bau menyengat", 
-        "penanganan": "Gunakan pelindung", 
-        "penyimpanan": "Tertutup rapat", 
-        "p3k": "Segera bilas", 
-        "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/320099"},
+            "nama": "Asam Asetat (CH₃COOH)", 
+            "bahaya": "Iritasi dan bau menyengat", 
+            "penanganan": "Gunakan pelindung", 
+            "penyimpanan": "Tertutup rapat", 
+            "p3k": "Segera bilas", 
+            "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/320099"
+        },
         
         "HBr": {
-        "nama": "Asam Bromida (HBr)", 
-        "bahaya": "Korosif dan beracun", 
-        "penanganan": "Gunakan goggles",
-        "penyimpanan": "Botol kaca",
-        "p3k": "Bilas air", 
-        "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/207409"},
+            "nama": "Asam Bromida (HBr)", 
+            "bahaya": "Korosif dan beracun", 
+            "penanganan": "Gunakan goggles",
+            "penyimpanan": "Botol kaca",
+            "p3k": "Bilas air", 
+            "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/207409"
+        },
         
         "HI": {
         "nama": "Asam Iodida (HI)", 
