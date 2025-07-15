@@ -47,7 +47,23 @@ msds_dict = {
 if st.session_state.halaman == 1:
     st.title("🧪 Aplikasi MSDS Bahan Kimia")
     st.markdown("### Selamat Datang!")
-    st.image("https://raw.githubusercontent.com/Yuchi1101/oke/refs/heads/main/10002208760.jpg", use_column_width=True)
+    import streamlit as st
+
+# CSS untuk background
+st.markdown(
+    f"""
+    <style>
+    .stApp {{
+        background-image: url("https://raw.githubusercontent.com/Yuchi1101/my-images/main/patrick.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
     st.markdown("""
         Aplikasi ini menyediakan informasi MSDS untuk beberapa bahan kimia umum.
         Tekan *Next* untuk memulai.
