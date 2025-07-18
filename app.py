@@ -1,12 +1,47 @@
 import streamlit as st
-DARK_THEME_COLORS {
-"bg_primary": "#1a1a2e", Warna latar belakang utama yang lebih gelap
-"bg_secondary": "#efef1c", Warna latar belakang elemen sekunder
-"bg_card": "#1f1f3a", Latar belakang card/container
-"bg_sidebar": "#1a1a2e", #Latar belakang sidebar
-"bg_active_sidebar_item": "#007bff", Warna biru cerah untuk item sidebar aktif (sesuai option menu default)
-"bg hover sidebar item": "#2a2a4a", # Warna hover sidebar
+st.set_page_config(page_title="Dark Theme App", layout="wide")
 
+st.markdown("""
+<style>
+/* Latar belakang utama */
+.stApp {
+    background-color: #1a1a2e;
+    color: white;
+}
+
+/* Kartu dan container */
+[data-testid="stMarkdownContainer"],
+[data-testid="stVerticalBlock"] {
+    background-color: #1f1f3a;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #1a1a2e;
+}
+
+/* Sidebar item aktif */
+.css-1d391kg, .css-1v3fvcr {
+    background-color: #007bff !important;
+    color: white !important;
+}
+
+/* Sidebar item saat hover */
+.css-17eq0hr:hover {
+    background-color: #2a2a4a !important;
+    color: white !important;
+}
+
+/* Elemen sekunder (misalnya tombol) */
+button[kind="primary"] {
+    background-color: #efef1c;
+    color: black;
+    border: none;
+}
+</style>
+""", unsafe_allow_html=True)
 # ---------------------
 # KONFIGURASI
 # ---------------------
