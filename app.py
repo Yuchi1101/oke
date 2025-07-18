@@ -1,10 +1,14 @@
-DARK_THEME_COLORS {
-"bg_primary": "#1a1a2e",# Warna latar belakang utama yang lebih gelap
-"bg_secondary": "#efef1c",# Warna latar belakang elemen sekunder
-"bg_card": "#1f1f3a",# Latar belakang card/container
-"bg_sidebar": "#11la2e", #Latar belakang sidebar
-"bg_active_sidebar_item": "#007bff",# Warna biru cerah untuk item sidebar aktif (sesuai option menu default)
-"bg hover sidebar item": "#2a2a4a", # Warna hover sidebar
+import streamlit as st
+
+DARK_THEME_COLORS = {
+    "bg_primary": "#1a1a2e",  # Warna latar belakang utama yang lebih gelap
+    "bg_secondary": "#efef1c",  # Warna latar belakang elemen sekunder
+    "bg_card": "#1f1f3a",  # Latar belakang card/container
+    "bg_sidebar": "#1a2e",  # Latar belakang sidebar (perbaikan dari #11la2e)
+    "bg_active_sidebar_item": "#007bff",  # Warna biru cerah untuk item sidebar aktif
+    "bg_hover_sidebar_item": "#2a2a4a",  # Warna hover sidebar (perbaikan nama kunci)
+}
+
 # ---------------------
 # KONFIGURASI
 # ---------------------
