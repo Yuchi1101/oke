@@ -1,5 +1,3 @@
-import streamlit as st
-
 DARK_THEME_COLORS {
 "bg_primary": "#1a1a2e",# Warna latar belakang utama yang lebih gelap
 "bg_secondary": "#efef1c",# Warna latar belakang elemen sekunder
