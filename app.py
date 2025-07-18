@@ -1,5 +1,20 @@
 import streamlit as st
 # ===== CSS CUSTOM STYLE =====
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-image: url("https://ibb.co/fzVHQNsX");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: white;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 st.markdown("""
     <style>
         /* ===== BACKGROUND GAMBAR ===== */
