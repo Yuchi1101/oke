@@ -6,7 +6,7 @@ DARK_THEME_COLORS = {
     "bg_secondary": "#A7ABDE",
     "bg_card": "#C2E5DF",
     "bg_sidebar": "#FFCA4A",
-    "bg_active_sidebar_item": "#FFE9AE",
+    "bg_active_sidebar_item": "#D8FFE1",
     "bg_hover_sidebar_item": "#A7ABDE",
 }
 
