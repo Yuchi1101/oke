@@ -3,7 +3,7 @@ st.markdown("""
     <style>
     .stApp {
         background: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)),
-                    url('https://www.ibudanbalita.com/uploads/posts/L4wjuys0pE.jpg');
+                    url('https://pin.it/1BH4rIhC6');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
