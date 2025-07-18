@@ -85,7 +85,7 @@ msds_data = {
             "penanganan": "Gunakan sarung tangan tahan asam, pelindung mata, dan masker.",
             "penyimpanan": "Simpan dalam botol kaca/plastik tebal, jauh dari basa.",
             "p3k": "Jika terkena kulit, bilas dengan air selama 15 menit dan cari bantuan medis.",
-            "link": "https://www.merckmillipore.com/Web-VE-Site/en_US/-/VEF/ShowDocument-File?ProductSKU=MDA_CHEM-109973&DocumentType=MSD&DocumentId=109973_SDS_ID_ID.PDF&DocumentUID=406631&Language=ID&Country=ID&Origin=null"
+            "link": "https://www.itokindo.org/download/manajemen_modern/MSDS/SDS%20-%20Asam%20Klorida%20-%20HCl.pdf"
         },
         "H2SO4": {
             "nama": "Asam Sulfat (H2SO4)",
