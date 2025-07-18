@@ -319,7 +319,7 @@ msds_data = {
             "penanganan": "Gunakan sarung tangan dan goggles.",
             "penyimpanan": "Tempat sejuk dan tertutup.",
             "p3k": "Cuci area terkena dengan air.",
-            "link": "#"
+            "link": "https://rprorwxhoilrmj5q.ldycdn.com/Cu(OH)2-MSDS-aidqpBpiKrpRmiSlqnjqklkj.pdf"
         },
         "AgOH": {
             "nama": "Perak Hidroksida",
