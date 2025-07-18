@@ -1,13 +1,46 @@
 import streamlit as st
 
+import streamlit as st
+
+# Definisikan warna tema gelap
 DARK_THEME_COLORS = {
-    "bg_primary": "#1a1a2e",  # Warna latar belakang utama yang lebih gelap
-    "bg_secondary": "#efef1c",  # Warna latar belakang elemen sekunder
-    "bg_card": "#1f1f3a",  # Latar belakang card/container
-    "bg_sidebar": "#1a2e",  # Latar belakang sidebar (perbaikan dari #11la2e)
-    "bg_active_sidebar_item": "#007bff",  # Warna biru cerah untuk item sidebar aktif
-    "bg_hover_sidebar_item": "#2a2a4a",  # Warna hover sidebar (perbaikan nama kunci)
+    "bg_primary": "#1a1a2e",
+    "bg_secondary": "#efef1c",
+    "bg_card": "#1f1f3a",
+    "bg_sidebar": "#1a2e",
+    "bg_active_sidebar_item": "#007bff",
+    "bg_hover_sidebar_item": "#2a2a4a",
 }
+
+# Terapkan tema
+st.set_page_config(
+    page_title="Aplikasi Tema Gelap",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
+# Gunakan warna tema dalam elemen Streamlit
+st.markdown(
+    f"""
+    <style>
+    .stApp {{
+        background-color: {DARK_THEME_COLORS['bg_primary']};
+    }}
+    .sidebar {{
+        background-color: {DARK_THEME_COLORS['bg_sidebar']};
+    }}
+    .stCard {{
+        background-color: {DARK_THEME_COLORS['bg_card']};
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+st.sidebar.title("Sidebar")
+st.sidebar.markdown("Ini adalah sidebar dengan tema gelap.")
+st.title("Aplikasi Tema Gelap")
+st.write("Selamat datang di aplikasi dengan tema gelap!")
 
 # ---------------------
 # KONFIGURASI
