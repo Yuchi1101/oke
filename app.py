@@ -1,21 +1,16 @@
 import streamlit as st
-# Tambahkan background lab
-st.markdown(
-    """
+st.markdown("""
     <style>
     .stApp {
-        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-                          url("https://images.unsplash.com/photo-1581090700227-1e8b5b59f2b9?auto=format&fit=crop&w=1950&q=80");
+        background: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)),
+                    url('https://www.ibudanbalita.com/uploads/posts/L4wjuys0pE.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background-attachment: fixed;
-        color: white;
+        color: white !important;
     }
     </style>
-    """,
-    unsafe_allow_html=True
-)
+    """, unsafe_allow_html=True)
 # ---------------------
 # KONFIGURASI
 # ---------------------
