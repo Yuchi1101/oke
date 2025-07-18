@@ -230,7 +230,7 @@ msds_data = {
             "penanganan": "Gunakan goggles dan sarung tangan.",
             "penyimpanan": "Disimpan dalam wadah tertutup.",
             "p3k": "Cuci area terkena dengan air mengalir.",
-            "link": "#"
+            "link": "https://microporeusa.com/wp-content/uploads/2020/12/SAFETY-DATA-SHEET-CaOH2.pdf"
     },
         "Ba(OH)2": {
             "nama": "Barium Hidroksida",
@@ -238,7 +238,7 @@ msds_data = {
             "penanganan": "Gunakan APD lengkap dan ventilasi baik.",
             "penyimpanan": "Jauhkan dari air dan kelembaban.",
             "p3k": "Segera hubungi layanan medis.",
-            "link": "#"
+            "link": "https://www.harpercollege.edu/chemistry/sds/Barium%20Hydroxide.pdf"
     },
         "NH4OH": {
             "nama": "Amonium Hidroksida",
@@ -254,7 +254,7 @@ msds_data = {
             "penanganan": "Gunakan sarung tangan dan masker.",
             "penyimpanan": "Tempat kering dan tertutup rapat.",
             "p3k": "Cuci dengan air mengalir.",
-            "link": "#"
+            "link": "https://www.flinnsci.com/sds_455-lithium-hydroxide/sds_455/"
     },
         "Mg(OH)2": {
             "nama": "Magnesium Hidroksida",
@@ -262,7 +262,7 @@ msds_data = {
             "penanganan": "Penanganan minimal dengan APD dasar.",
             "penyimpanan": "Simpan di tempat kering dan tertutup.",
             "p3k": "Bilas dengan air bersih.",
-            "link": "#"
+            "link": "https://www.carlroth.com/downloads/sdb/en/9/SDB_9453_IE_EN.pdf"
     },
         "Sr(OH)2": {
             "nama": "Stronsium Hidroksida",
@@ -270,7 +270,7 @@ msds_data = {
             "penanganan": "Gunakan pelindung kulit dan goggles.",
             "penyimpanan": "Simpan dalam wadah tertutup rapat.",
             "p3k": "Cuci dengan air bersih jika terkena.",
-            "link": "#"
+            "link": "https://www.flinnsci.com/sds_785.1-strontium-hydroxide/sds_785.1/"
     },
         "Al(OH)3": {
             "nama": "Aluminium Hidroksida",
@@ -278,7 +278,7 @@ msds_data = {
             "penanganan": "Gunakan masker debu dan APD dasar.",
             "penyimpanan": "Simpan di tempat sejuk dan kering.",
             "p3k": "Bilas dengan air bersih.",
-            "link": "#"
+            "link": "https://www.flinnsci.com/sds_39-aluminum-hydroxide/sds_39/"
     },
         "Zn(OH)2": {
             "nama": "Seng Hidroksida",
@@ -286,7 +286,7 @@ msds_data = {
             "penanganan": "Gunakan pelindung mata dan sarung tangan.",
             "penyimpanan": "Tutup rapat dan jauhkan dari kelembapan.",
             "p3k": "Cuci mata atau kulit dengan air mengalir.",
-            "link": "#"
+            "link": "https://www.angenechemical.com/sds/20427-58-1.pdf"
     },
         "Fe(OH)3": {
             "nama": "Besi(III) Hidroksida",
@@ -392,7 +392,7 @@ msds_data = {
             "penanganan": "Gunakan ventilasi kuat dan detektor gas.",
             "penyimpanan": "Disimpan dalam silinder tekan khusus.",
             "p3k": "Segera pindahkan ke udara segar dan berikan oksigen.",
-            "link": "#"
+            "link": "https://produkte.linde-gas.at/sdb_konform/H2S_10021749EN.pdf"
     },
         "CO": {
             "nama": "Karbon Monoksida (CO)",
@@ -400,7 +400,7 @@ msds_data = {
             "penanganan": "Gunakan detektor CO dan sistem ventilasi baik.",
             "penyimpanan": "Simpan dalam silinder gas bertekanan.",
             "p3k": "Berikan oksigen 100% dan bawa ke layanan medis darurat.",
-            "link": "#"
+            "link": "https://www.airgas.com/msds/001014.pdf"
     },
         "NO2": {
             "nama": "Nitrogen Dioksida (NO₂)",
@@ -408,7 +408,7 @@ msds_data = {
             "penanganan": "Gunakan respirator dan pastikan ventilasi ruangan memadai.",
             "penyimpanan": "Simpan dalam botol tahan gas bertekanan.",
             "p3k": "Bawa korban ke udara segar dan dapatkan bantuan medis segera.",
-            "link": "#"
+            "link": "https://balchem.com/wp-content/uploads/2024/11/10215gb_CLP_II_134_ATP4_0000_stikstofdioxide_balchem.pdf"
     },
         "SO2": {
             "nama": "Sulfur Dioksida (SO₂)",
@@ -416,7 +416,7 @@ msds_data = {
             "penanganan": "Gunakan ventilasi baik dan alat pelindung diri.",
             "penyimpanan": "Simpan dalam silinder logam dengan label jelas.",
             "p3k": "Segera bawa ke udara segar, hubungi medis bila perlu.",
-            "link": "#"
+            "link": "https://www.airgas.com/msds/001047.pdf"
     },
         "F2": {
             "nama": "Fluorin (F₂)",
@@ -424,7 +424,7 @@ msds_data = {
             "penanganan": "Gunakan APD lengkap dan sistem ventilasi tertutup.",
             "penyimpanan": "Tabung baja tahan korosi khusus untuk F₂.",
             "p3k": "Segera ke IGD, jangan tunda.",
-            "link": "#"
+            "link": "https://www.airgas.com/msds/001061.pdf"
     },
         "Br2": {
             "nama": "Bromin (Br₂)",
@@ -432,7 +432,7 @@ msds_data = {
             "penanganan": "Gunakan masker dan goggles pelindung.",
             "penyimpanan": "Botol gelap tahan korosi, jauh dari panas.",
             "p3k": "Cuci area terkena dan beri udara segar.",
-            "link": "#"
+            "link": "https://www.fishersci.com/store/msds?countryCode=US&language=en&partNumber=AC402845000&productDescription=BROMINE%2C+99%2B%25+500ML&vendorId=VN00032119"
     },
         "HCl(g)": {
             "nama": "Asam Klorida (gas)",
@@ -448,7 +448,7 @@ msds_data = {
             "penanganan": "Gunakan APD lengkap dan sistem penyaring gas.",
             "penyimpanan": "Tabung logam tahan korosi, simpan di tempat aman.",
             "p3k": "Segera ke IGD untuk penanganan darurat.",
-            "link": "#"
+            "link": "https://www.airgas.com/msds/001077.pdf"
     },
         "O3": {
             "nama": "Ozon (O₃)",
@@ -456,7 +456,7 @@ msds_data = {
             "penanganan": "Gunakan detektor ozon dan ventilasi baik.",
             "penyimpanan": "Hindari paparan sinar UV langsung.",
             "p3k": "Pindahkan ke udara segar, dapatkan bantuan medis.",
-            "link": "#"
+            "link": "https://www1.mscdirect.com/MSDS/MSDS00020/86598174-20171006.PDF"
     },
         "PH3": {
             "nama": "Fosfin (PH₃)",
@@ -464,7 +464,7 @@ msds_data = {
             "penanganan": "Gunakan APD lengkap dan tangani di fume hood.",
             "penyimpanan": "Simpan dalam silinder baja tertutup rapat.",
             "p3k": "Segera ke IGD.",
-            "link": "#"
+            "link": "https://www.airgas.com/msds/001070.pdf"
     },
         "AsH3": {
             "nama": "Arsina (AsH₃)",
@@ -472,7 +472,7 @@ msds_data = {
             "penanganan": "Gunakan respirator, detektor gas, dan APD.",
             "penyimpanan": "Tabung logam tahan tekanan.",
             "p3k": "Penanganan medis darurat segera.",
-            "link": "#"
+            "link": "https://produkte.linde-gas.at/sdb_konform/AsH3_10021803EN.pdf"
     },
         "ClO2": {
             "nama": "Klorin Dioksida (ClO₂)",
@@ -496,7 +496,7 @@ msds_data = {
             "penanganan": "Ventilasi kuat dan APD lengkap.",
             "penyimpanan": "Simpan dalam silinder logam.",
             "p3k": "Berikan oksigen dan pengawasan medis.",
-            "link": "#"
+            "link": "https://www.airgas.com/msds/001039.pdf"
     },
         "CO2": {
             "nama": "Karbon Dioksida (CO₂)",
@@ -554,7 +554,7 @@ msds_data = {
             "penanganan": "Jauhkan dari api dan sumber panas.",
             "penyimpanan": "Simpan dalam botol tertutup rapat.",
             "p3k": "Pastikan ventilasi baik dan bawa ke udara segar.",
-            "link": "#"
+            "link": "https://www.sigmaaldrich.com/ID/en/sds/sigald/179124"
     },
         "Benzena": {
             "nama": "Benzena",
@@ -562,7 +562,7 @@ msds_data = {
             "penanganan": "Gunakan masker dan alat pelindung diri lengkap.",
             "penyimpanan": "Simpan di tempat dingin dan berventilasi.",
             "p3k": "Segera cari bantuan medis jika terpapar.",
-            "link": "#"
+            "link":"https://www.scribd.com/document/473505991/Benzene-MSDS"
     },
         "Toluena": {
             "nama": "Toluena",
@@ -570,7 +570,7 @@ msds_data = {
             "penanganan": "Gunakan di area berventilasi baik.",
             "penyimpanan": "Simpan dalam botol gelap yang tertutup rapat.",
             "p3k": "Pindahkan ke udara segar jika terpapar.",
-            "link": "#"
+            "link": "https://www.fishersci.com/store/msds?countryCode=US&language=en&partNumber=AC326980010&productDescription=TOLUENE&vendorId=VN00033901"
     },
         "Xilena": {
             "nama": "Xilena",
@@ -578,7 +578,7 @@ msds_data = {
             "penanganan": "Gunakan pelindung pernapasan dan APD.",
             "penyimpanan": "Simpan di tempat kering dan tertutup.",
             "p3k": "Pindahkan ke udara segar.",
-            "link": "#"
+            "link": "https://www.pcs.com.sg/wp-content/uploads/2017/04/PCS08006.pdf"
     },
         "Kloroform": {
             "nama": "Kloroform",
@@ -586,7 +586,7 @@ msds_data = {
             "penanganan": "Gunakan masker uap organik dan APD.",
             "penyimpanan": "Simpan dalam botol gelap, jauh dari cahaya.",
             "p3k": "Bawa ke IGD segera jika terpapar.",
-            "link": "#"
+            "link": "https://www.sigmaaldrich.com/ID/en/sds/SIAL/288306"
     },
         "Diethyl Ether": {
             "nama": "Dietil Eter",
@@ -594,7 +594,7 @@ msds_data = {
             "penanganan": "Jauhkan dari listrik statis dan api.",
             "penyimpanan": "Gunakan botol tahan tekanan dan tertutup rapat.",
             "p3k": "Evakuasi area dan cari bantuan medis.",
-            "link": "#"
+            "link": "https://www.fishersci.com/store/msds?countryCode=US&language=en&partNumber=AC123990050&productDescription=DIETHYL+ETHER+PUR+5LT&vendorId=VN00032119"
     },
         "Tetrahidrofuran": {
             "nama": "Tetrahidrofuran (THF)",
@@ -602,7 +602,7 @@ msds_data = {
             "penanganan": "Gunakan alat pelindung diri lengkap.",
             "penyimpanan": "Simpan dalam botol gelap yang tertutup.",
             "p3k": "Pindahkan ke udara segar.",
-            "link": "#"
+            "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/401757"
     },
         "DMSO": {
             "nama": "Dimetilsulfoksida (DMSO)",
@@ -610,14 +610,6 @@ msds_data = {
             "penanganan": "Gunakan sarung tangan khusus dan APD.",
             "penyimpanan": "Simpan tertutup rapat di tempat sejuk.",
             "p3k": "Cuci dengan air mengalir jika kontak dengan kulit.",
-            "link": "#"
-    },
-        "Formamida": {
-            "nama": "Formamida",
-            "bahaya": "Toksik jika terhirup atau terserap kulit.",
-            "penanganan": "Gunakan di ruang berventilasi baik.",
-            "penyimpanan": "Simpan di tempat kering dan tertutup.",
-            "p3k": "Pindahkan ke udara segar.",
             "link": "#"
     },
         "Pyridine": {
