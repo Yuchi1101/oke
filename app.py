@@ -141,7 +141,7 @@ msds_data = {
             "penanganan": "Pelindung standar",
             "penyimpanan": "Botol tertutup",
             "p3k": "Cuci air",
-            "link": "#"
+            "link": "file:///C:/Users/YUCHI/Downloads/801417_SDS_ID_ID%20(2).PDF"
         },
         "H2C2O4": {
             "nama": "Asam Oksalat (H₂C₂O₄)",
@@ -149,7 +149,7 @@ msds_data = {
             "penanganan": "Gunakan pelindung",
             "penyimpanan": "Tertutup rapat",
             "p3k": "Segera bilas",
-            "link": "#"
+            "link": "https://www.itokindo.org/download/manajemen_modern/MSDS/SDS%20-%20Asam%20Oksalat%20Dihidrat%20-%20H2C2O4%E2%80%A22H2O.pdf"
         },
         "HClO4": {
             "nama": "Asam Perklorat (HClO₄)",
@@ -157,14 +157,14 @@ msds_data = {
             "penanganan": "APD lengkap",
             "penyimpanan": "Botol tahan asam",
             "p3k": "Ke IGD",
-            "link": "#"},
+            "link": https://www.sigmaaldrich.com/ID/en/sds/aldrich/311421?srsltid=AfmBOop8JdVp_oU88Y8nlTqvUaY90BVC4vK9_UvlyPvwY4u-a0ZLj61B
         "H2SeO4": {
             "nama": "Asam Selenat (H₂SeO₄)",
             "bahaya": "Toksik",
             "penanganan": "Masker dan goggles",
             "penyimpanan": "Jauh dari organik",
             "p3k": "Udara segar",
-            "link": "#"
+            "link": "https://www.itokindo.org/download/manajemen_modern/MSDS/SDS%20-%20Asam%20Sulfat%20-%20H2SO4%20r.pdf"
         },
         "HBO2": {
             "nama": "Asam Borat (HBO₂)",
@@ -172,7 +172,7 @@ msds_data = {
             "penanganan": "Minimal",
             "penyimpanan": "Tutup rapat",
             "p3k": "Bilas air",
-            "link": "#"
+            "link": "https://www.chemos.de/import/data/msds/GB_en/13460-50-9-A0096971-GB-en.pdf"
         },
         "C6H5COOH": {
             "nama": "Asam Benzoat",
@@ -180,7 +180,7 @@ msds_data = {
             "penanganan": "Pelindung standar",
             "penyimpanan": "Tertutup",
             "p3k": "Cuci air",
-            "link": "#"
+            "link": "https://www.itokindo.org/download/manajemen_modern/MSDS/SDS%20-%20Asam%20Benzoat%20-%20C6H5COOH.pdf"
         },
         "HSO3Cl": {
             "nama": "Asam Sulfonat",
@@ -188,7 +188,7 @@ msds_data = {
             "penanganan": "Ventilasi baik",
             "penyimpanan": "Botol tahan asam",
             "p3k": "Segera bilas",
-            "link": "#"
+            "link": "https://www.fishersci.com/store/msds?partNumber=AC304491000&productDescription=CHLOROSULFONIC+ACID+97%25+100ML&vendorId=VN00032119&countryCode=US&language=en"
         },
         "H2S": {
             "nama": "Asam Sulfida (gas)",
@@ -196,7 +196,7 @@ msds_data = {
             "penanganan": "Masker respirator",
             "penyimpanan": "Silinder",
             "p3k": "Ke udara segar", 
-            "link": "#"
+            "link": "https://www.sigmaaldrich.com/ID/en/sds/aldrich/295442?userType=undefined"
         },
         "CCl3COOH": {
             "nama": "Asam Trikloroasetat",
@@ -204,7 +204,7 @@ msds_data = {
             "penanganan": "APD lengkap",
             "penyimpanan": "Jauh dari panas",
             "p3k": "Segera bilas",
-            "link": "#"
+            "link": "https://labchem-wako.fujifilm.com/sds/W01W0120-0240JGHEEN.pdf"
         }
     },
     "Basa": {
