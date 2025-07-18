@@ -2,19 +2,6 @@ import streamlit as st
 # ===== CSS CUSTOM STYLE =====
 st.markdown("""
     <style>
-    .stApp {
-        background: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)),
-                    url('https://images.app.goo.gl/r3DHSNUmdwBqRDfx8
-');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        color: white !important;
-    }
-    </style>
-    """, unsafe_allow_html=True)
-st.markdown("""
-    <style>
         /* ===== BACKGROUND GAMBAR ===== */
         .stApp {
             background-image: url('https://pin.it/5lQrk5VD8');
