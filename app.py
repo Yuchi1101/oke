@@ -3,10 +3,10 @@ import streamlit as st
 # Definisikan warna tema gelap
 DARK_THEME_COLORS = {
     "bg_primary": "#ECD2E0",
-    "bg_secondary": "#FFA5D6",
-    "bg_card": "#FFD6EE",
-    "bg_sidebar": "#FFF0F1",
-    "bg_active_sidebar_item": "#CED1F8",
+    "bg_secondary": "#A7ABDE",
+    "bg_card": "#C2E5DF",
+    "bg_sidebar": "#FFCA4A",
+    "bg_active_sidebar_item": "#FFE9AE",
     "bg_hover_sidebar_item": "#A7ABDE",
 }
 
