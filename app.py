@@ -1,31 +1,4 @@
 import streamlit as st
-# ===== CSS CUSTOM STYLE =====
-st.markdown("""
-    <style>
-        /* ===== BACKGROUND GAMBAR ===== */
-        .stApp {
-            background-image: url('https://pin.it/5lQrk5VD8');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: #333333;
-            font-family: 'Segoe UI', sans-serif;
-        }
-
-        /* ===== LAPISAN TRANSPARAN AGAR TEKS TERBACA ===== */
-        .stApp::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.75); /* biru muda */
-            z-index: -1;
-        }
-    </style>
-""", unsafe_allow_html=True)
-
 # ---------------------
 # KONFIGURASI
 # ---------------------
@@ -247,7 +220,7 @@ msds_data = {
             "penanganan": "Gunakan ventilasi yang memadai dan pelindung pernapasan.",
             "penyimpanan": "Simpan dalam botol tertutup rapat.",
             "p3k": "Segera bawa ke udara segar.",
-            "link": "#"
+            "link": "https://www.itokindo.org/download/manajemen_modern/MSDS/SDS%20-%20Amonia%20-%20NH4OH%20r1.pdf"
         },
         "LiOH": {
             "nama": "Litium Hidroksida",
@@ -295,7 +268,7 @@ msds_data = {
             "penanganan": "Gunakan masker debu dan APD standar.",
             "penyimpanan": "Botol tertutup dan kering.",
             "p3k": "Bilas dengan air jika kontak.",
-            "link": "#"
+            "link": "https://www.wbcil.com/wp-content/uploads/2023/10/MSDS-of-Iron-III-Hydroxide-Polymaltose-Complex.pdf"
         },
         "Cr(OH)3": {
             "nama": "Kromium(III) Hidroksida",
@@ -303,7 +276,7 @@ msds_data = {
             "penanganan": "Gunakan APD lengkap dan tangani di fume hood.",
             "penyimpanan": "Jauhkan dari bahan asam.",
             "p3k": "Dapatkan bantuan medis segera.",
-            "link": "#"
+            "link": "https://www.inchem.org/documents/icsc/icsc/eics1455.htm"
         },
         "Ni(OH)2": {
             "nama": "Nikel(II) Hidroksida",
@@ -311,7 +284,7 @@ msds_data = {
             "penanganan": "Gunakan masker dan ventilasi cukup.",
             "penyimpanan": "Simpan dalam botol tertutup.",
             "p3k": "Pindahkan ke udara segar, konsultasikan medis.",
-            "link": "#"
+            "link": "https://www.fishersci.se/chemicalProductData_uk/wercs?itemCode=10287640&lang=EN"
         },
         "Cu(OH)2": {
             "nama": "Tembaga(II) Hidroksida",
@@ -327,7 +300,7 @@ msds_data = {
             "penanganan": "Tangani dengan hati-hati dan minimalkan eksposur.",
             "penyimpanan": "Simpan dalam botol gelap dan sejuk.",
             "p3k": "Cuci dengan air jika kontak.",
-            "link": "#"
+            "link": "https://www.fishersci.com/store/msds?partNumber=S25528&productDescription=SILVER+OXIDE+25G&vendorId=VN00115888&countryCode=US&language=en"
         },
         "Pb(OH)2": {
             "nama": "Timbal(II) Hidroksida",
@@ -611,7 +584,7 @@ msds_data = {
             "penanganan": "Gunakan sarung tangan khusus dan APD.",
             "penyimpanan": "Simpan tertutup rapat di tempat sejuk.",
             "p3k": "Cuci dengan air mengalir jika kontak dengan kulit.",
-            "link": "#"
+            "link": "https://www.fishersci.com/store/msds?partNumber=D1391&productDescription=DIMETHYL+SULFOXIDE+GC+HS+1L&vendorId=VN00033897&countryCode=US&language=en"
         },
         "Pyridine": {
             "nama": "Piridin",
@@ -619,7 +592,7 @@ msds_data = {
             "penanganan": "Gunakan masker dan APD.",
             "penyimpanan": "Simpan dalam botol tertutup rapat.",
             "p3k": "Bilas area kontak dan pindahkan ke udara segar.",
-            "link": "#"
+            "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/270970?userType=undefined"
         },
         "Aniline": {
             "nama": "Anilin",
@@ -627,7 +600,7 @@ msds_data = {
             "penanganan": "Gunakan alat pelindung diri lengkap.",
             "penyimpanan": "Simpan dalam wadah gelap dan tertutup.",
             "p3k": "Segera ke rumah sakit jika terpapar.",
-            "link": "#"
+            "link": "https://www.fishersci.com/store/msds?partNumber=A740I500&productDescription=ANILINE+ACS+500ML&vendorId=VN00033897&countryCode=US&language=en"
         },
         "Nitrobenzene": {
             "nama": "Nitrobenzena",
@@ -635,7 +608,7 @@ msds_data = {
             "penanganan": "Gunakan pelindung lengkap dan kerja di fume hood.",
             "penyimpanan": "Simpan tertutup rapat, jauh dari panas.",
             "p3k": "Segera cari pertolongan medis.",
-            "link": "#"
+            "link": "https://www.fishersci.com/store/msds?partNumber=N91I4&productDescription=NITROBENZENE+CERT+ACS+4L+IND&vendorId=VN00033897&countryCode=US&language=en"
         },
         "Butanol": {
             "nama": "Butanol",
@@ -643,7 +616,7 @@ msds_data = {
             "penanganan": "Hindari api dan gunakan ventilasi baik.",
             "penyimpanan": "Simpan dalam botol aman dan tertutup.",
             "p3k": "Pindahkan ke udara segar dan beri ventilasi.",
-            "link": "#"
+            "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/281549?userType=undefined"
         },
         "Isopropanol": {
             "nama": "Isopropil Alkohol",
@@ -651,7 +624,7 @@ msds_data = {
             "penanganan": "Jauhkan dari panas dan nyala api.",
             "penyimpanan": "Gunakan botol kaca/plastik yang tertutup.",
             "p3k": "Pindahkan ke udara segar jika terhirup.",
-            "link": "#"
+            "link": "https://www.sigmaaldrich.com/ID/en/sds/SIAL/W292912?userType=undefined"
         },
         "Hexane": {
             "nama": "Heksana",
@@ -659,7 +632,7 @@ msds_data = {
             "penanganan": "Gunakan ventilasi baik dan APD.",
             "penyimpanan": "Simpan dalam wadah tertutup rapat.",
             "p3k": "Pindahkan ke udara segar.",
-            "link": "#"
+            "link": "https://www.chemos.de/import/data/msds/GB_en/110-54-3-A0001755-GB-en.pdf"
         },
         "Cyclohexane": {
             "nama": "Sikloheksana",
@@ -667,7 +640,7 @@ msds_data = {
             "penanganan": "Gunakan pelindung kimia lengkap.",
             "penyimpanan": "Simpan dalam wadah tertutup rapat.",
             "p3k": "Pindahkan ke udara segar.",
-            "link": "#"
+            "link": "https://www.chemos.de/import/data/msds/GB_en/110-82-7-A0000750-GB-en.pdf"
         },
         "Acetonitrile": {
             "nama": "Asetonitril",
@@ -675,7 +648,7 @@ msds_data = {
             "penanganan": "Gunakan pelindung lengkap dan kerja di fume hood.",
             "penyimpanan": "Simpan dalam wadah tertutup rapat.",
             "p3k": "Segera cari pertolongan medis.",
-            "link": "#"
+            "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/271004?userType=undefined"
         },
         "Chlorobenzene": {
             "nama": "Klorobenzena",
@@ -683,7 +656,7 @@ msds_data = {
             "penanganan": "Gunakan ventilasi dan masker.",
             "penyimpanan": "Simpan dalam botol tertutup dan jauh dari panas.",
             "p3k": "Cuci area terkena dan pindahkan ke udara segar.",
-            "link": "#"
+            "link": "https://www.fishersci.com/store/msds?partNumber=B2544&productDescription=CHLOROBENZENE+MONO+LAB+4L&vendorId=VN00033897&countryCode=US&language=en"
         
         }
     }
