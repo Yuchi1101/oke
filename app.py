@@ -11,6 +11,15 @@ st.markdown("""
     }
     </style>
     """, unsafe_allow_html=True)
+
+DARK_THEME_COLORS {
+"bg_primary": "#ECD2E0", # Warna latar belakang utama yang lebih gelap
+"bg_secondary": "#CED1F8", # Warna latar belakang elemen sekunder
+"bg_card": "#1f1f3a",# Latar belakang card/container
+"bg_sidebar": "#ECD2E0", # Latar belakang sidebar
+"bg_active_sidebar_item": "#007bff",# Warna biru cerah untuk item sidebar aktif (sesuai option menu default)
+"bg hover sidebar item": "#2a2a4a", # Warna hover sidebar
+    }
 # ---------------------
 # KONFIGURASI
 # ---------------------
