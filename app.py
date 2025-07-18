@@ -157,7 +157,8 @@ msds_data = {
             "penanganan": "APD lengkap",
             "penyimpanan": "Botol tahan asam",
             "p3k": "Ke IGD",
-            "link": https://www.sigmaaldrich.com/ID/en/sds/aldrich/311421?srsltid=AfmBOop8JdVp_oU88Y8nlTqvUaY90BVC4vK9_UvlyPvwY4u-a0ZLj61B
+            "link": "https://www.sigmaaldrich.com/ID/en/sds/aldrich/311421?srsltid=AfmBOop8JdVp_oU88Y8nlTqvUaY90BVC4vK9_UvlyPvwY4u-a0ZLj61B"
+        },
         "H2SeO4": {
             "nama": "Asam Selenat (H₂SeO₄)",
             "bahaya": "Toksik",
