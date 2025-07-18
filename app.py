@@ -215,7 +215,7 @@ msds_data = {
             "penyimpanan": "Simpan dalam wadah tertutup rapat di tempat sejuk dan kering.",
             "p3k": "Bilas area terkena dengan banyak air selama minimal 15 menit.",
             "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/221465"
-    },
+        },
         "KOH": {
             "nama": "Kalium Hidroksida (KOH)",
             "bahaya": "Korosif, menyebabkan iritasi kulit dan mata.",
@@ -223,7 +223,7 @@ msds_data = {
             "penyimpanan": "Simpan di tempat sejuk dan tertutup rapat.",
             "p3k": "Segera bilas dengan air jika kontak.",
             "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/221473"
-    },
+        },
         "Ca(OH)2": {
             "nama": "Kalsium Hidroksida (Ca(OH)₂)",
             "bahaya": "Iritasi kulit dan mata.",
@@ -231,7 +231,7 @@ msds_data = {
             "penyimpanan": "Disimpan dalam wadah tertutup.",
             "p3k": "Cuci area terkena dengan air mengalir.",
             "link": "https://microporeusa.com/wp-content/uploads/2020/12/SAFETY-DATA-SHEET-CaOH2.pdf"
-    },
+        },
         "Ba(OH)2": {
             "nama": "Barium Hidroksida",
             "bahaya": "Beracun dan korosif.",
@@ -239,7 +239,7 @@ msds_data = {
             "penyimpanan": "Jauhkan dari air dan kelembaban.",
             "p3k": "Segera hubungi layanan medis.",
             "link": "https://www.harpercollege.edu/chemistry/sds/Barium%20Hydroxide.pdf"
-    },
+        },
         "NH4OH": {
             "nama": "Amonium Hidroksida",
             "bahaya": "Menghasilkan uap menyengat yang iritatif.",
@@ -247,7 +247,7 @@ msds_data = {
             "penyimpanan": "Simpan dalam botol tertutup rapat.",
             "p3k": "Segera bawa ke udara segar.",
             "link": "#"
-    },
+        },
         "LiOH": {
             "nama": "Litium Hidroksida",
             "bahaya": "Iritasi kuat pada kulit dan saluran pernapasan.",
@@ -255,7 +255,7 @@ msds_data = {
             "penyimpanan": "Tempat kering dan tertutup rapat.",
             "p3k": "Cuci dengan air mengalir.",
             "link": "https://www.flinnsci.com/sds_455-lithium-hydroxide/sds_455/"
-    },
+        },
         "Mg(OH)2": {
             "nama": "Magnesium Hidroksida",
             "bahaya": "Iritasi ringan pada kulit dan mata.",
@@ -263,7 +263,7 @@ msds_data = {
             "penyimpanan": "Simpan di tempat kering dan tertutup.",
             "p3k": "Bilas dengan air bersih.",
             "link": "https://www.carlroth.com/downloads/sdb/en/9/SDB_9453_IE_EN.pdf"
-    },
+        },
         "Sr(OH)2": {
             "nama": "Stronsium Hidroksida",
             "bahaya": "Korosif, dapat menyebabkan luka kimia.",
@@ -271,7 +271,7 @@ msds_data = {
             "penyimpanan": "Simpan dalam wadah tertutup rapat.",
             "p3k": "Cuci dengan air bersih jika terkena.",
             "link": "https://www.flinnsci.com/sds_785.1-strontium-hydroxide/sds_785.1/"
-    },
+        },
         "Al(OH)3": {
             "nama": "Aluminium Hidroksida",
             "bahaya": "Iritasi ringan bila terhirup atau kontak langsung.",
@@ -279,7 +279,7 @@ msds_data = {
             "penyimpanan": "Simpan di tempat sejuk dan kering.",
             "p3k": "Bilas dengan air bersih.",
             "link": "https://www.flinnsci.com/sds_39-aluminum-hydroxide/sds_39/"
-    },
+        },
         "Zn(OH)2": {
             "nama": "Seng Hidroksida",
             "bahaya": "Dapat mengiritasi mata dan kulit.",
@@ -287,7 +287,7 @@ msds_data = {
             "penyimpanan": "Tutup rapat dan jauhkan dari kelembapan.",
             "p3k": "Cuci mata atau kulit dengan air mengalir.",
             "link": "https://www.angenechemical.com/sds/20427-58-1.pdf"
-    },
+        },
         "Fe(OH)3": {
             "nama": "Besi(III) Hidroksida",
             "bahaya": "Iritasi ringan jika terhirup atau kontak.",
@@ -295,7 +295,7 @@ msds_data = {
             "penyimpanan": "Botol tertutup dan kering.",
             "p3k": "Bilas dengan air jika kontak.",
             "link": "#"
-    },
+        },
         "Cr(OH)3": {
             "nama": "Kromium(III) Hidroksida",
             "bahaya": "Korosif dan berpotensi toksik.",
@@ -303,7 +303,7 @@ msds_data = {
             "penyimpanan": "Jauhkan dari bahan asam.",
             "p3k": "Dapatkan bantuan medis segera.",
             "link": "#"
-    },
+        },
         "Ni(OH)2": {
             "nama": "Nikel(II) Hidroksida",
             "bahaya": "Iritasi saluran pernapasan dan kulit.",
@@ -311,7 +311,7 @@ msds_data = {
             "penyimpanan": "Simpan dalam botol tertutup.",
             "p3k": "Pindahkan ke udara segar, konsultasikan medis.",
             "link": "#"
-    },
+        },
         "Cu(OH)2": {
             "nama": "Tembaga(II) Hidroksida",
             "bahaya": "Iritasi kulit dan mata.",
@@ -319,7 +319,7 @@ msds_data = {
             "penyimpanan": "Tempat sejuk dan tertutup.",
             "p3k": "Cuci area terkena dengan air.",
             "link": "#"
-    },
+        },
         "AgOH": {
             "nama": "Perak Hidroksida",
             "bahaya": "Tidak stabil, dapat terurai.",
@@ -327,7 +327,7 @@ msds_data = {
             "penyimpanan": "Simpan dalam botol gelap dan sejuk.",
             "p3k": "Cuci dengan air jika kontak.",
             "link": "#"
-    },
+        },
         "Pb(OH)2": {
             "nama": "Timbal(II) Hidroksida",
             "bahaya": "Toksik berat, terutama jika terhirup.",
@@ -335,7 +335,7 @@ msds_data = {
             "penyimpanan": "Tertutup rapat, kering, dan berlabel jelas.",
             "p3k": "Segera bawa ke IGD.",
             "link": "#"
-    },
+        },
         "Sn(OH)2": {
             "nama": "Timah(II) Hidroksida",
             "bahaya": "Iritasi kulit dan mata.",
@@ -343,7 +343,7 @@ msds_data = {
             "penyimpanan": "Tempat sejuk dan tertutup.",
             "p3k": "Bilas dengan air bersih.",
             "link": "#"
-    },
+        },
         "Bi(OH)3": {
             "nama": "Bismut(III) Hidroksida",
             "bahaya": "Dapat mengiritasi mata.",
@@ -351,7 +351,7 @@ msds_data = {
             "penyimpanan": "Simpan di tempat kering dan tertutup.",
             "p3k": "Cuci mata atau kulit dengan air.",
             "link": "#"
-    },
+        },
         "Be(OH)2": {
             "nama": "Berilium Hidroksida",
             "bahaya": "Sangat toksik dan karsinogenik.",
@@ -359,7 +359,7 @@ msds_data = {
             "penyimpanan": "Botol tertutup dan berlabel bahaya tinggi.",
             "p3k": "Segera ke IGD untuk penanganan darurat.",
             "link": "#"
-    },
+        },
         "Co(OH)2": {
             "nama": "Kobalt(II) Hidroksida",
             "bahaya": "Iritasi dan berbahaya bila terhirup atau tertelan.",
@@ -393,7 +393,7 @@ msds_data = {
             "penyimpanan": "Disimpan dalam silinder tekan khusus.",
             "p3k": "Segera pindahkan ke udara segar dan berikan oksigen.",
             "link": "https://produkte.linde-gas.at/sdb_konform/H2S_10021749EN.pdf"
-    },
+        },
         "CO": {
             "nama": "Karbon Monoksida (CO)",
             "bahaya": "Gas tak berwarna dan tak berbau, sangat beracun.",
@@ -401,7 +401,7 @@ msds_data = {
             "penyimpanan": "Simpan dalam silinder gas bertekanan.",
             "p3k": "Berikan oksigen 100% dan bawa ke layanan medis darurat.",
             "link": "https://www.airgas.com/msds/001014.pdf"
-    },
+        },
         "NO2": {
             "nama": "Nitrogen Dioksida (NO₂)",
             "bahaya": "Iritasi paru-paru dan dapat menyebabkan edema paru.",
@@ -409,7 +409,7 @@ msds_data = {
             "penyimpanan": "Simpan dalam botol tahan gas bertekanan.",
             "p3k": "Bawa korban ke udara segar dan dapatkan bantuan medis segera.",
             "link": "https://balchem.com/wp-content/uploads/2024/11/10215gb_CLP_II_134_ATP4_0000_stikstofdioxide_balchem.pdf"
-    },
+        },
         "SO2": {
             "nama": "Sulfur Dioksida (SO₂)",
             "bahaya": "Iritasi saluran pernapasan dan mata.",
@@ -417,7 +417,7 @@ msds_data = {
             "penyimpanan": "Simpan dalam silinder logam dengan label jelas.",
             "p3k": "Segera bawa ke udara segar, hubungi medis bila perlu.",
             "link": "https://www.airgas.com/msds/001047.pdf"
-    },
+        },
         "F2": {
             "nama": "Fluorin (F₂)",
             "bahaya": "Sangat reaktif dan beracun, menyebabkan luka bakar kimia.",
@@ -425,7 +425,7 @@ msds_data = {
             "penyimpanan": "Tabung baja tahan korosi khusus untuk F₂.",
             "p3k": "Segera ke IGD, jangan tunda.",
             "link": "https://www.airgas.com/msds/001061.pdf"
-    },
+        },
         "Br2": {
             "nama": "Bromin (Br₂)",
             "bahaya": "Uap korosif dan iritasi pada saluran pernapasan.",
@@ -433,7 +433,7 @@ msds_data = {
             "penyimpanan": "Botol gelap tahan korosi, jauh dari panas.",
             "p3k": "Cuci area terkena dan beri udara segar.",
             "link": "https://www.fishersci.com/store/msds?countryCode=US&language=en&partNumber=AC402845000&productDescription=BROMINE%2C+99%2B%25+500ML&vendorId=VN00032119"
-    },
+        },
         "HCl(g)": {
             "nama": "Asam Klorida (gas)",
             "bahaya": "Sangat korosif dan iritasi paru.",
@@ -441,7 +441,7 @@ msds_data = {
             "penyimpanan": "Simpan dalam tabung logam bertekanan.",
             "p3k": "Bilas mata atau kulit, beri udara segar.",
             "link": "#"
-    },
+        },
         "HF(g)": {
             "nama": "Asam Fluorida (gas)",
             "bahaya": "Sangat toksik dan menyerang jaringan dalam.",
@@ -449,7 +449,7 @@ msds_data = {
             "penyimpanan": "Tabung logam tahan korosi, simpan di tempat aman.",
             "p3k": "Segera ke IGD untuk penanganan darurat.",
             "link": "https://www.airgas.com/msds/001077.pdf"
-    },
+        },
         "O3": {
             "nama": "Ozon (O₃)",
             "bahaya": "Oksidator kuat, menyebabkan iritasi paru-paru.",
@@ -457,7 +457,7 @@ msds_data = {
             "penyimpanan": "Hindari paparan sinar UV langsung.",
             "p3k": "Pindahkan ke udara segar, dapatkan bantuan medis.",
             "link": "https://www1.mscdirect.com/MSDS/MSDS00020/86598174-20171006.PDF"
-    },
+        },
         "PH3": {
             "nama": "Fosfin (PH₃)",
             "bahaya": "Sangat beracun dan mudah meledak.",
@@ -465,7 +465,7 @@ msds_data = {
             "penyimpanan": "Simpan dalam silinder baja tertutup rapat.",
             "p3k": "Segera ke IGD.",
             "link": "https://www.airgas.com/msds/001070.pdf"
-    },
+        },
         "AsH3": {
             "nama": "Arsina (AsH₃)",
             "bahaya": "Toksik berat, menyerang sel darah merah.",
@@ -473,7 +473,7 @@ msds_data = {
             "penyimpanan": "Tabung logam tahan tekanan.",
             "p3k": "Penanganan medis darurat segera.",
             "link": "https://produkte.linde-gas.at/sdb_konform/AsH3_10021803EN.pdf"
-    },
+        },
         "ClO2": {
             "nama": "Klorin Dioksida (ClO₂)",
             "bahaya": "Eksplosif, oksidator kuat dan toksik.",
@@ -481,7 +481,7 @@ msds_data = {
             "penyimpanan": "Botol gelap bertekanan rendah, jauhkan dari cahaya.",
             "p3k": "Berikan oksigen dan bantuan medis segera.",
             "link": "#"
-    },
+        },
         "HNO3(g)": {
             "nama": "Asam Nitrat Uap",
             "bahaya": "Korosif dan iritasi berat.",
@@ -489,7 +489,7 @@ msds_data = {
             "penyimpanan": "Tertutup rapat dan jauh dari panas.",
             "p3k": "Udara segar, bilas dengan air jika kontak.",
             "link": "#"
-    },
+        },
         "NO": {
             "nama": "Nitric Oxide (NO)",
             "bahaya": "Gas reaktif, membentuk NO₂ di udara.",
@@ -497,7 +497,7 @@ msds_data = {
             "penyimpanan": "Simpan dalam silinder logam.",
             "p3k": "Berikan oksigen dan pengawasan medis.",
             "link": "https://www.airgas.com/msds/001039.pdf"
-    },
+        },
         "CO2": {
             "nama": "Karbon Dioksida (CO₂)",
             "bahaya": "Dapat menyebabkan sesak napas dalam ruang tertutup.",
@@ -505,7 +505,7 @@ msds_data = {
             "penyimpanan": "Tabung gas standar tekanan tinggi.",
             "p3k": "Pindahkan ke tempat terbuka segera.",
             "link": "#"
-    },
+        },
         "H2": {
             "nama": "Hidrogen (H₂)",
             "bahaya": "Gas sangat mudah meledak bila tercampur udara.",
@@ -513,7 +513,7 @@ msds_data = {
             "penyimpanan": "Simpan dalam tabung tekanan tinggi.",
             "p3k": "Evakuasi area, beri udara segar.",
             "link": "#"
-    },
+        },
         "N2O": {
             "nama": "Nitrous Oxide (N₂O)",
             "bahaya": "Gas anestesi, memabukkan dalam jumlah tinggi.",
@@ -521,7 +521,7 @@ msds_data = {
             "penyimpanan": "Tabung baja dengan label jelas.",
             "p3k": "Pindahkan ke udara segar.",
             "link": "#"
-    },
+        },
         "CH4": {
             "nama": "Metana (CH₄)",
             "bahaya": "Gas mudah meledak, tidak beracun tapi mudah terbakar.",
@@ -539,7 +539,7 @@ msds_data = {
             "penyimpanan": "Simpan dalam wadah tertutup pada suhu ruang.",
             "p3k": "Pindahkan ke udara segar jika terhirup.",
             "link": "https://www.sigmaaldrich.com/ID/en/sds/aldrich/459836"
-    },
+        },
         "Metanol": {
             "nama": "Metanol (CH₃OH)",
             "bahaya": "Toksik, paparan dapat menyebabkan kebutaan.",
@@ -547,7 +547,7 @@ msds_data = {
             "penyimpanan": "Simpan di tempat sejuk dan berventilasi baik.",
             "p3k": "Segera bawa ke fasilitas medis jika terpapar.",
             "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/34860"
-    },
+        },
         "Aseton": {
             "nama": "Aseton (CH₃COCH₃)",
             "bahaya": "Mudah terbakar.",
@@ -555,7 +555,7 @@ msds_data = {
             "penyimpanan": "Simpan dalam botol tertutup rapat.",
             "p3k": "Pastikan ventilasi baik dan bawa ke udara segar.",
             "link": "https://www.sigmaaldrich.com/ID/en/sds/sigald/179124"
-    },
+        },
         "Benzena": {
             "nama": "Benzena",
             "bahaya": "Karsinogenik dan beracun.",
@@ -563,7 +563,7 @@ msds_data = {
             "penyimpanan": "Simpan di tempat dingin dan berventilasi.",
             "p3k": "Segera cari bantuan medis jika terpapar.",
             "link":"https://www.scribd.com/document/473505991/Benzene-MSDS"
-    },
+        },
         "Toluena": {
             "nama": "Toluena",
             "bahaya": "Mudah menguap dan berbahaya jika terhirup.",
@@ -571,7 +571,7 @@ msds_data = {
             "penyimpanan": "Simpan dalam botol gelap yang tertutup rapat.",
             "p3k": "Pindahkan ke udara segar jika terpapar.",
             "link": "https://www.fishersci.com/store/msds?countryCode=US&language=en&partNumber=AC326980010&productDescription=TOLUENE&vendorId=VN00033901"
-    },
+        },
         "Xilena": {
             "nama": "Xilena",
             "bahaya": "Iritasi dan bersifat racun.",
@@ -579,7 +579,7 @@ msds_data = {
             "penyimpanan": "Simpan di tempat kering dan tertutup.",
             "p3k": "Pindahkan ke udara segar.",
             "link": "https://www.pcs.com.sg/wp-content/uploads/2017/04/PCS08006.pdf"
-    },
+        },
         "Kloroform": {
             "nama": "Kloroform",
             "bahaya": "Bersifat narkotik dan toksik.",
@@ -587,7 +587,7 @@ msds_data = {
             "penyimpanan": "Simpan dalam botol gelap, jauh dari cahaya.",
             "p3k": "Bawa ke IGD segera jika terpapar.",
             "link": "https://www.sigmaaldrich.com/ID/en/sds/SIAL/288306"
-    },
+        },
         "Diethyl Ether": {
             "nama": "Dietil Eter",
             "bahaya": "Sangat mudah terbakar dan mudah meledak.",
@@ -595,7 +595,7 @@ msds_data = {
             "penyimpanan": "Gunakan botol tahan tekanan dan tertutup rapat.",
             "p3k": "Evakuasi area dan cari bantuan medis.",
             "link": "https://www.fishersci.com/store/msds?countryCode=US&language=en&partNumber=AC123990050&productDescription=DIETHYL+ETHER+PUR+5LT&vendorId=VN00032119"
-    },
+        },
         "Tetrahidrofuran": {
             "nama": "Tetrahidrofuran (THF)",
             "bahaya": "Reaktif dengan udara dan mudah terbakar.",
@@ -603,7 +603,7 @@ msds_data = {
             "penyimpanan": "Simpan dalam botol gelap yang tertutup.",
             "p3k": "Pindahkan ke udara segar.",
             "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/401757"
-    },
+        },
         "DMSO": {
             "nama": "Dimetilsulfoksida (DMSO)",
             "bahaya": "Dapat menembus kulit dan membawa zat lain ke dalam tubuh.",
@@ -611,7 +611,7 @@ msds_data = {
             "penyimpanan": "Simpan tertutup rapat di tempat sejuk.",
             "p3k": "Cuci dengan air mengalir jika kontak dengan kulit.",
             "link": "#"
-    },
+        },
         "Pyridine": {
             "nama": "Piridin",
             "bahaya": "Bau menyengat dan bersifat iritasi.",
@@ -619,7 +619,7 @@ msds_data = {
             "penyimpanan": "Simpan dalam botol tertutup rapat.",
             "p3k": "Bilas area kontak dan pindahkan ke udara segar.",
             "link": "#"
-    },
+        },
         "Aniline": {
             "nama": "Anilin",
             "bahaya": "Toksik dan karsinogenik.",
@@ -627,7 +627,7 @@ msds_data = {
             "penyimpanan": "Simpan dalam wadah gelap dan tertutup.",
             "p3k": "Segera ke rumah sakit jika terpapar.",
             "link": "#"
-    },
+        },
         "Nitrobenzene": {
             "nama": "Nitrobenzena",
             "bahaya": "Toksik kuat dan dapat merusak organ.",
@@ -635,7 +635,7 @@ msds_data = {
             "penyimpanan": "Simpan tertutup rapat, jauh dari panas.",
             "p3k": "Segera cari pertolongan medis.",
             "link": "#"
-    },
+        },
         "Butanol": {
             "nama": "Butanol",
             "bahaya": "Mudah terbakar dan iritasi.",
@@ -643,7 +643,7 @@ msds_data = {
             "penyimpanan": "Simpan dalam botol aman dan tertutup.",
             "p3k": "Pindahkan ke udara segar dan beri ventilasi.",
             "link": "#"
-    },
+        },
         "Isopropanol": {
             "nama": "Isopropil Alkohol",
             "bahaya": "Mudah terbakar dan menyebabkan iritasi.",
@@ -651,7 +651,7 @@ msds_data = {
             "penyimpanan": "Gunakan botol kaca/plastik yang tertutup.",
             "p3k": "Pindahkan ke udara segar jika terhirup.",
             "link": "#"
-    },
+        },
         "Hexane": {
             "nama": "Heksana",
             "bahaya": "Neurotoksik dan mudah menguap.",
@@ -659,7 +659,7 @@ msds_data = {
             "penyimpanan": "Simpan dalam wadah tertutup rapat.",
             "p3k": "Pindahkan ke udara segar.",
             "link": "#"
-    },
+        },
         "Cyclohexane": {
             "nama": "Sikloheksana",
             "bahaya": "Iritasi dan mudah terbakar.",
@@ -667,7 +667,7 @@ msds_data = {
             "penyimpanan": "Simpan dalam wadah tertutup rapat.",
             "p3k": "Pindahkan ke udara segar.",
             "link": "#"
-    },
+        },
         "Acetonitrile": {
             "nama": "Asetonitril",
             "bahaya": "Beracun dan mudah terbakar.",
@@ -675,7 +675,7 @@ msds_data = {
             "penyimpanan": "Simpan dalam wadah tertutup rapat.",
             "p3k": "Segera cari pertolongan medis.",
             "link": "#"
-    },
+        },
         "Chlorobenzene": {
             "nama": "Klorobenzena",
             "bahaya": "Iritasi dan bersifat toksik.",
