@@ -1,15 +1,13 @@
 import streamlit as st
 
-import streamlit as st
-
 # Definisikan warna tema gelap
 DARK_THEME_COLORS = {
-    "bg_primary": "#1a1a2e",
-    "bg_secondary": "#efef1c",
-    "bg_card": "#1f1f3a",
-    "bg_sidebar": "#1a2e",
-    "bg_active_sidebar_item": "#007bff",
-    "bg_hover_sidebar_item": "#2a2a4a",
+    "bg_primary": "#ECD2E0",
+    "bg_secondary": "#FFA5D6",
+    "bg_card": "#FFD6EE",
+    "bg_sidebar": "#FFF0F1",
+    "bg_active_sidebar_item": "#CED1F8",
+    "bg_hover_sidebar_item": "#A7ABDE",
 }
 
 # Terapkan tema
@@ -36,11 +34,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
-st.sidebar.title("Sidebar")
-st.sidebar.markdown("Ini adalah sidebar dengan tema gelap.")
-st.title("Aplikasi Tema Gelap")
-st.write("Selamat datang di aplikasi dengan tema gelap!")
 
 # ---------------------
 # KONFIGURASI
