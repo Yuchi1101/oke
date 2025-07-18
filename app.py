@@ -35,13 +35,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.markdown("""
-<style>
-.stApp {
-    background-image: url('https://placehold.co/1920x1080?text=Chemistry+Lab');
-    background-size: cover;
-    background-position: center;
-}
 # ---------------------
 # KONFIGURASI
 # ---------------------
