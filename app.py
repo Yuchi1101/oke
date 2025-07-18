@@ -1,4 +1,21 @@
 import streamlit as st
+# Tambahkan background lab
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                          url("https://images.unsplash.com/photo-1581090700227-1e8b5b59f2b9?auto=format&fit=crop&w=1950&q=80");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: white;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 # ---------------------
 # KONFIGURASI
 # ---------------------
@@ -80,8 +97,8 @@ msds_data = {
             "nama": "Asam Bromida (HBr)",
             "bahaya": "Korosif dan beracun",
             "penanganan": "Gunakan goggles",
-            "penyimpanan": "Botol kaca",
-            "p3k": "Bilas air",
+            "penyimpanan": "Simpan di ruang khusus bahan korosif,Wadah tertutup rapat, diberi label jelas,Jangan disimpan bersama logam atau basa",
+            "p3k": "jika terkena mata (Bilas mata dengan air mengalir 15–20 menit) bila terhirup (Bawa ke udara segar, longgarkan pakaian), jika terkena kulit (Lepaskan pakaian terkontaminasi,Cuci kulit dengan air 15–20 menit)",
             "link": "https://www.sigmaaldrich.com/ID/en/sds/sial/207409"
         },
         "HI": {
@@ -114,7 +131,7 @@ msds_data = {
             "penanganan": "Pelindung standar",
             "penyimpanan": "Botol tertutup",
             "p3k": "Cuci air",
-            "link": "file:///C:/Users/YUCHI/Downloads/801417_SDS_ID_ID%20(2).PDF"
+            "link": "https://www.fishersci.com/content/dam/fishersci/en_US/documents/programs/education/regulatory-documents/sds/chemicals/chemicals-c/S25234.pdf"
         },
         "H2C2O4": {
             "nama": "Asam Oksalat (H₂C₂O₄)",
